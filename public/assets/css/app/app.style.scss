@@ -84,31 +84,51 @@ body {
 }
 
 .app-navbar > .button-container ul.menu-dropdown > li > a {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
   padding: 25px 30px;
   text-align: right;
   font-size: 20px;
 }
 
-.app-navbar > .button-container ul.menu-dropdown > li > ul.submenu-dropdown {
-  display: none;
-}
-
 .app-navbar > .button-container ul.menu-dropdown > li > a:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
   background-color: rgba(215,215,215,0.2);
   color: #E21574;
 }
 
 .app-navbar > .button-container ul.menu-dropdown > li > ul.submenu-dropdown {
-  display: none;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
   position: absolute;
   top: 0%;
   right: 99%;
-  width: 280px;
+  z-index: 999;
+  width: 0;
   max-width: 280px;
+  height: 366px;
   min-height: 366px;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
   background-color: rgba(226, 21, 116, 0.9);
   list-style: none;
   padding-left: 0;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  -ms-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  -o-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
 }
 
 .app-navbar > .button-container ul.menu-dropdown > li > ul.submenu-dropdown > li:first-child {
@@ -116,6 +136,11 @@ body {
 }
 
 .app-navbar > .button-container ul.menu-dropdown > li > ul.submenu-dropdown > li > a {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
   display: block;
   padding: 10px 15px;
   font-size: 20px;
@@ -124,13 +149,26 @@ body {
 }
 
 .app-navbar > .button-container ul.menu-dropdown > li > ul.submenu-dropdown > li > a:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
   text-decoration: none;
   background-color: rgba(205, 0, 91, 0.2);
   color: #FFFFFF;
 }
 
 .app-navbar > .button-container ul.menu-dropdown > li:hover > ul.submenu-dropdown {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
   display: block;
+  width: 280px;
+  visibility: visible;
+  opacity: 1;
 }
 
 .app-footer {
