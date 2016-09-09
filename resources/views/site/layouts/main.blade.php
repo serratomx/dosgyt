@@ -21,10 +21,27 @@
             <img src="{!! asset('public/assets/img/logo-dosgyt.png') !!}" class="img-logo">
           </div>
           <div class="col-xs-6 button-container">
-            <div class="pull-right">
-              <button id="btn-menu" class="btn-menu hvr-sweep-to-top btn btn-default">
+            <div id="btn-menu" class="pull-right dropdown">
+              <button class="menu-button hvr-sweep-to-top btn btn-default" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
                 <span class="fa fa-bars"></span>
               </button>
+              <ul class="menu-dropdown dropdown-menu" role="menu" aria-labelledby="mainMenu">
+                <li>
+                  <a href="#">Portafolio</a>
+                  <ul class="submenu-dropdown">
+                    <li><a href="#">Imagen corporativa</a></li>
+                    <li><a href="#">Diseño industrial</a></li>
+                    <li><a href="#">Redes sociales</a></li>
+                    <li><a href="#">Campañas publicitarias</a></li>
+                    <li><a href="#">Sistemas de información</a></li>
+                    <li><a href="#">Fotografía</a></li>
+                    <li><a href="#">Ilustración</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nuestros<br/>clientes</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
             </div>
           </div>
         </div>
