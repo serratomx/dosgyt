@@ -25,4 +25,12 @@ Route::group(['as' => 'site.'], function(){
       'uses'  => 'HomeController@index'
     ]);
   });
+
+  Route::group(['prefix' => 'portfolio', 'as' => 'portfolio.'], function(){
+
+    Route::get('/{submenu?}', [
+      'as'    =>  'index',
+      'uses'  => 'PortfolioController@index'
+    ]);
+  });
 });

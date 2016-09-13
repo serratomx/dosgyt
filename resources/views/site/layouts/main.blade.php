@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2GyT | Soluciones Gráficas</title>
+  <title>2G&T | @yield('title')</title>
   <!-- START [Cascade Style Sheet Files] -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/animate.css') !!}">
@@ -16,9 +16,11 @@
   <div class="container-fluid @yield('navbar-class')">
     <div class="row">
       <header>
-        <div id="navbar" class="app-navbar col-xs-12">
+        <div id="navbar" class="app-navbar col-xs-12 {!! (isset($navbarFixed) and !$navbarFixed) ?: 'app-navbar-fixed' !!}">
           <div class="col-xs-6 logo-container">
-            <img src="{!! asset('public/assets/img/logo-dosgyt.png') !!}" class="img-logo">
+            <a href="{!! URL::to('/') !!}">
+              <img src="{!! asset('public/assets/img/logo-dosgyt.png') !!}" class="img-logo">
+            </a>
           </div>
           <div class="col-xs-6 button-container">
             <div id="btn-menu" class="pull-right dropdown">
@@ -26,25 +28,36 @@
                 <span class="fa fa-bars"></span>
               </button>
               <ul class="menu-dropdown dropdown-menu" role="menu" aria-labelledby="mainMenu">
-                <li>
-                  <a href="#">Portafolio</a>
-                  <ul class="submenu-dropdown">
-                    <li><a href="#">Imagen corporativa</a></li>
-                    <li><a href="#">Diseño industrial</a></li>
-                    <li><a href="#">Redes sociales</a></li>
-                    <li><a href="#">Campañas publicitarias</a></li>
-                    <li><a href="#">Sistemas de información</a></li>
-                    <li><a href="#">Fotografía</a></li>
-                    <li><a href="#">Ilustración</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Nuestros<br/>clientes</a></li>
-                <li><a href="#">Contacto</a></li>
+                <?php 
+                  $menu = App\Menu::whereKeyword('main');
+                ?>
+                @if ($menu->count() == 1)
+                  <?php
+                    $menu = $menu->first();
+                  ?>
+                  @foreach ($menu->submenues as $submenu)
+                    <li>
+                      <a href="{!! !empty($submenu->url) ? URL::to($submenu->url) : '#' !!}">{!! $submenu->name !!}</a>
+                      <?php 
+                        $menu = $submenu;
+                      ?>
+                      @if ($menu->submenues->count() > 0)
+                        <ul class="submenu-dropdown">
+                          @foreach ($menu->submenues as $submenu)
+                            <li><a href="{!! URL::to('/'.$menu->keyword.'/'.$submenu->keyword) !!}">{!! $submenu->name !!}</a></li>
+                          @endforeach
+                        </ul>
+                      @endif
+                    </li>
+                  @endforeach
+                @endif
               </ul>
             </div>
           </div>
         </div>
+        @if (!isset($navbarFixed) or (isset($navbarFixed) and $navbarFixed))
+          <div class="app-navbar-space"></div>
+        @endif
       </header>
     </div>
   </div>
