@@ -18,12 +18,8 @@ class CreateClientsTable extends Migration
       $table->increments('id');
       $table->string('keyword', 32);
       $table->string('name');
-      $table->text('description');
       $table->string('logo_path')->nullable();
       $table->string('logo_url')->nullable();
-      $table->string('cover_page_image_path')->nullable();
-      $table->string('cover_page_image_url')->nullable();
-      $table->boolean('is_our_client');
       $table->timestamps();
     });
 
@@ -35,6 +31,9 @@ class CreateClientsTable extends Migration
       $table->integer('client_id')->unsigned();
       $table->integer('submenu_id')->unsigned();
       $table->integer('order_priority');
+      $table->text('description');
+      $table->string('cover_page_path')->nullable();
+      $table->string('cover_page_url')->nullable();
       $table->timestamps();
       
       /**
@@ -65,13 +64,15 @@ class CreateClientsTable extends Migration
       if ($client->count() == 1) {
         $client = $client->first();
 
-        foreach ($submenues as $submenu => $order_priority) {
+        foreach ($submenues as $submenu => $attr) {
           $submenu = Submenu::whereKeyword($submenu);
 
           if ($submenu->count() == 1) {
             $submenu = $submenu->first();
 
-            $client->submenues()->attach([$submenu->id => ['order_priority' => $order_priority]]);
+            $client->submenues()->attach([
+              $submenu->id => $attr
+            ]);
           }
         }
       }

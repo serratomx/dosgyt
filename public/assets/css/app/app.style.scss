@@ -152,7 +152,7 @@ body {
   -o-transition: all .2s;
   transition: all .2s;
   display: block;
-  padding: 10px 15px;
+  padding: 7.4px 15px;
   font-size: 20px;
   text-align: right;
   color: #F1F1F1;
@@ -264,6 +264,10 @@ body {
 
 .home-page .app-description.fadeInUp {
   -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  -ms-animation-duration: 1.2s;
+  -o-animation-duration: 1.2s;
+  animation-duration: 1.2s;
 }
 
 .home-page .app-description .header h1 {
@@ -290,30 +294,31 @@ body {
   text-align: center;
 }
 
-.app-portfolio ul {
+.app-portfolio ul.tablist {
+  padding-left: 0;
   display: inline-block;
 }
 
-.app-portfolio ul > li {
+.app-portfolio ul.tablist > li {
   text-align: center;
   list-style: none;
   display: block;
   float: left;
 }
 
-.app-portfolio ul > li > a {
+.app-portfolio ul.tablist > li > a {
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
   -o-transition: all .3s;
   display: block;
-  padding: 12px 20px;
-  font-size: 18px;
+  padding: 12px 17px;
+  font-size: 17px;
   color: #000000;
   text-decoration: none;
 }
 
-.app-portfolio ul > li > a:hover {
+.app-portfolio ul.tablist > li > a:hover {
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
@@ -321,8 +326,40 @@ body {
   color: #E21574;
 }
 
-.app-portfolio ul > li.active > a {
+.app-portfolio ul.tablist > li.active > a {
   color: #E21574;
+}
+
+.app-portfolio .tab-content > .tab-pane {
+  min-height: 520px;
+}
+
+.app-portfolio .tab-content > .tab-pane .client-container {
+  padding: 25px 15px;
+}
+
+.app-portfolio .tab-content > .tab-pane .client-container .client-image {
+  cursor: pointer;
+  background-size: 180px 180px, 180px 180px;
+  background-position: center center, center center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.app-portfolio .tab-content > .tab-pane .client-container .client-image:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-size: 216px 216px;
+}
+
+.app-portfolio .tab-content > .tab-pane .client-container.fadeInUp {
+  -webkit-animation-duration: .8s;
+  -moz-animation-duration: .8s;
+  -ms-animation-duration: .8s;
+  -o-animation-duration: .8s;
+  animation-duration: .8s;
 }
 
 /* [OTHER PAGE]

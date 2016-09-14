@@ -11,16 +11,12 @@ class Client extends Model
   protected $fillable = [
     'keyword',
     'name',
-    'description',
     'logo_path',
-    'logo_url',
-    'cover_page_image_path',
-    'cover_page_image_url',
-    'is_our_client'
+    'logo_url'
   ];
 
   public function submenues() {
-    return $this->belongsToMany('App\Submenu', 'client_submenu')->withPivot(['order_priority'])->withTimestamps();
+    return $this->belongsToMany('App\Submenu', 'client_submenu')->withPivot(['order_priority', 'description', 'cover_page_path', 'cover_page_url'])->withTimestamps();
   }
 
   public function getCoverPageLinkAttribute() {

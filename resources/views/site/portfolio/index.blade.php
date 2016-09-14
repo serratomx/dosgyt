@@ -40,45 +40,28 @@
                 $prev = 0;
               ?>
               @foreach ($submenu->clients()->orderBy('order_priority', 'ASC')->get() as $client)
-                @if ($i%4 == 0)
-                  @if ($i > $prev)
-                    </div>
-                  @endif
-                  <?php 
-                    $prev = $i;
-                    $any_item = $num_clients - ($i + 1);
-                  ?>
-                  @if ($any_item)
-                    @if ($i == $last_clients and $remaining_clients == 3)
-                      <div class="col-xs-8 col-xs-offset-2 no-side-padding">
-                    @else
-                      <div class="col-xs-12 no-side-padding">
-                    @endif
-                  @endif
-                @endif
                 @if ($i >= $last_clients) 
                   @if ($remaining_clients == 3)
-                    <div class="col-xs-4">
+                    <div class="col-xs-4 no-side-padding">
                   @elseif ($j == 0 and $remaining_clients == 2)
-                    <div class="col-xs-offset-3 col-xs-3">
+                    <div class="col-xs-offset-3 col-xs-3 no-side-padding">
                   @elseif ($j == 1 and $remaining_clients == 2)
-                    <div class="col-xs-3">
-                  @else 
-                    <div class="col-xs-offset-4 col-xs-4">
+                    <div class="col-xs-3 no-side-padding">
+                  @elseif ($remaining_clients == 1)
+                    <div class="col-xs-offset-4 col-xs-4 no-side-padding">
                   @endif
                   <?php ++$j ?>
                 @else 
-                  <div class="col-xs-3">
+                  <div class="col-xs-3 no-side-padding">
                 @endif
-                    <div class="text-center">
-                      <div class="img-circle s100x100 inline-block" style="background-image: url({!! asset($client->cover_page_link) !!}); background-size: cover;"></div>
+                    <div id="client-container-{!! $i !!}" class="client-container hidden col-xs-12 no-side-padding text-center">
+                      <a href="#" title="Ver {!! $client->name !!}">
+                        <div class="client-image img-circle s100x100 inline-block" style="background-image: url({!! asset('public/assets/img/bg-transparent-black.png') !!}), url({!! asset($client->pivot->cover_page_path.$client->pivot->cover_page_url) !!});"></div>
+                      </a>
                     </div>
                   </div>
                 <?php ++$i ?>
               @endforeach
-              @if ($any_item)
-                </div>
-              @endif
             </div>
           </div>
           <?php ++$i ?>

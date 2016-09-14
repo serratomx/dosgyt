@@ -46,176 +46,394 @@ return [
     
     'illustration' => [
       'name'  => 'Ilustración',
+    ],
+
+    'cartel' => [
+      'name'  => 'Cartel' 
     ]
   ],
 
   'clients' => [
     'jesus-roberto' => [
-      'name'                  => 'Jesús Roberto',
-      'description'           => 'Imagen de la campaña política para candidato independiente a presidente municipal de Matamoros. Matamoros es conocido como la puerta de México por sus importantes rutas comerciales, tanto marítimas, como terrestres. La marca está basada en la escultura del artista “Sebastián”: La Gran Puerta de México. Los colores reflejan la calidez del clima y gente de Matamoros.',
-      'cover_page_image_path' => 'public/files/site/img/clients/cover_page/',
-      'cover_page_image_url'  => 'jesus-roberto.png',
-      'is_our_client'         => 1
+      'name' => 'Jesús Roberto'
     ],
 
     'start-point' => [
-      'name'                  => 'Start Point',
-      'description'           => 'Imagen para oficinas de coworking dirigidas a un sector joven y emprendedor. El coworking es un concepto donde varios profesionistas trabajan juntos es un espacio donde se intercambian ideas y conocimientos. La marca se conforma de un símbolo a base de hexágonos, que semejan un panal de abejas, ejemplo de comunidad, esfuerzo, libertad e independencia. Manteniendo la imagen gráfica de la marca, se realizó el contenido para sus redes sociales.',
-      'cover_page_image_path' => 'public/files/site/img/clients/cover_page/',
-      'cover_page_image_url'  => 'start-point.png',
-      'is_our_client'         => 1
+      'name' => 'Start Point'
     ],
 
     'galeria-laberynto' => [
-      'name'                  => 'Galería Laberynto',
-      'description'           => 'Imagen generada para galería de artes plásticas, en Querétaro. Esta marca ilustra, tanto el contenido como el recorrido que ocurre en una galería de arte. Se realizó un folleto que sirvió como soporte impreso para la inauguración.',
-      'cover_page_image_path' => 'public/files/site/img/clients/cover_page/',
-      'cover_page_image_url'  => 'galeria-laberynto.png',
-      'is_our_client'         => 1
+      'name' => 'Galería Laberynto'
     ],
 
     'imaginarium' => [
-      'name'                  => 'Imaginarium',
-      'description'           => 'Imagen creada para la quinta edición de la pasarela de los alumnos del Instituto Via Diseño. Se realizó una campaña integral que reflejara el concepto de “imaginarium” (concepto rector de la pasarela), manteniendo la elegancia que caracteriza a la moda. Uno de los soportes generados fue un pequeño libro con datos de los diseñadores.',
-      'cover_page_image_path' => 'public/files/site/img/clients/cover_page/',
-      'cover_page_image_url'  => 'imaginarium.png',
-      'is_our_client'         => 1
+      'name' => 'Imaginarium'
     ],
 
     'saazil' => [
-      'name'                  => 'Saazil',
-      'description'           => 'Desarrollo de marca para empresa mexicana de sistemas fotovoltaicos en la Ciudad de México. La marca se compone de dos elementos: logotipo e isotipo. El logotipo (palabra Saazil) es un vocablo Maya, que significa Luz. El isotipo está conformado de trángulos, que en conjunto con la forma final y el color, remiten al sol.',
-      'cover_page_image_path' => 'public/files/site/img/clients/cover_page/',
-      'cover_page_image_url'  => 'saazil.png',
-      'is_our_client'         => 1
+      'name' => 'Saazil'
     ],
 
     'llaza' => [
-      'name'                  => 'Llaza',
-      'description'           => 'Desarrollo de marca para inmobiliaria queretana.',
-      'cover_page_image_path' => 'public/files/site/img/clients/cover_page/',
-      'cover_page_image_url'  => 'llaza.png',
-      'is_our_client'         => 1
+      'name' => 'Llaza'
     ],
 
     'torneo-de-la-amistad' => [
-      'name'                  => 'Torneo de la Amistad',
-      'description'           => 'Se diseñó una campaña integral para la imagen local del torneo de la amistad del año 2015, que tuvo sede en la ciudad de Querétaro. La marca refleja la diversidad e integridad del evento, sin perder el concepto de competencia. Con base en la marca, se realizó la señalética para el lugar del evento.',
-      'cover_page_image_path' => 'public/files/site/img/clients/cover_page/',
-      'cover_page_image_url'  => 'torneo-de-la-amistad.png',
-      'is_our_client'         => 0
+      'name' => 'Torneo de la Amistad'
     ],
 
     'ornamenta' => [
-      'name'                  => 'Ornamenta',
-      'description'           => 'Desarrollo de marca para joyería mexicana que actualmente distribuye en las tiendas Pineda Covalín.',
-      'cover_page_image_path' => 'public/files/site/img/clients/cover_page/',
-      'cover_page_image_url'  => 'ornamenta.png',
-      'is_our_client'         => 1
+      'name' => 'Ornamenta'
     ],
 
     'a-brief-love-of-affairs' => [
-      'name'                  => 'A brief love of affairs',
-      'description'           => 'Desarrollo de marca para galería de arte en Nueva York en el barrio de Chelsea.',
-      'cover_page_image_path' => 'public/files/site/img/clients/cover_page/',
-      'cover_page_image_url'  => 'a-brief-love-of-affairs.png',
-      'is_our_client'         => 1
+      'name' => 'A brief love of affairs'
     ],
 
     'ana-telletxea' => [
-      'name'                  => 'Ana Telletxea',
-      'description'           => 'Imagen para la marca de la diseñadora de moda Ana Telletxea. Es una marca para mujeres jóvenes, que recurre a la firma de la diseñadora para darle autenticidad. Al usar su nombre como marca, se mimetiza con las mujeres que usan sus prendas, volviéndose una mujer más y no un objeto de deseo.',
-      'cover_page_image_path' => 'public/files/site/img/clients/cover_page/',
-      'cover_page_image_url'  => 'ana-telletxea.png',
-      'is_our_client'         => 0
+      'name' => 'Ana Telletxea'
     ],
 
     'antigua-altamira' => [
-      'name'                  => 'Antigua Altamira',
-      'description'           => 'Se generaron distintos soportes impresos que facilitaran la comunicación interna de los departamentos ubicados en el centro histórico de la ciudad de Querétaro, así como soportes para atraer futuros huéspedes como postales e infografías.',
-      'cover_page_image_path' => 'public/files/site/img/clients/cover_page/',
-      'cover_page_image_url'  => 'antigua-altamira.png',
-      'is_our_client'         => 0
+      'name' => 'Antigua Altamira'
     ],
 
     'holliday-inn' => [
-      'name'                  => 'Holliday Inn',
-      'description'           => 'Se generaron distintos soportes impresos que facilitaran la comunicación interna de los departamentos ubicados en el centro histórico de la ciudad de Querétaro, así como soportes para atraer futuros huéspedes como postales e infografías.',
-      'cover_page_image_path' => 'public/files/site/img/clients/cover_page/',
-      'cover_page_image_url'  => 'holliday-inn.png',
-      'is_our_client'         => 1
+      'name' => 'Holliday Inn'
+    ],
+
+    'abkam' => [
+      'name' => 'Abkam'
+    ],
+
+    'crayola' => [
+      'name' => 'Crayola'
+    ],
+
+    'zote' => [
+      'name' => 'Jabón Zote'
+    ],
+
+    'swarovsky' => [
+      'name' => 'Swarovsky'
     ],
 
     'coca-cola' => [
-      'name'                  => 'Coca Cola',
-      'description'           => 'Fotografía de producto.',
-      'cover_page_image_path' => 'public/files/site/img/clients/cover_page/',
-      'cover_page_image_url'  => 'coca-cola.png',
-      'is_our_client'         => 0
-    ]
+      'name' => 'Coca Cola'
+    ],
+
+    'jumex' => [
+      'name' => 'JUMEX'
+    ],
+
+    'converse' => [
+      'name' => 'Converse'
+    ],
+
+    'sperry' => [
+      'name' => 'Sperry'
+    ],
+
+    'retrato' => [
+      'name' => 'Retrato'
+    ],
+
+    'pajaro' => [
+      'name' => 'Pájaro' 
+    ],
+
+    'dia-anahuac' => [
+      'name' => 'Día Anahuac'
+    ],
+
+    'dia-de-muertos' => [
+      'name' => 'Día de muertos'
+    ],
+
+    'trata-de-personas' => [
+      'name' => 'Trata de personas'
+    ],
+
+    'energia-sustentable' => [
+      'name' => 'Energía sustentable'
+    ] 
   ],
 
   'client_submenu' => [
     'jesus-roberto' => [
-      'corporative-image'      => 1,
-      'adversiting-campaign'  => 1,
-      'information-systems'   => 1
+      'corporative-image' => [
+        'description'       => 'Imagen de la campaña política para candidato independiente a presidente municipal de Matamoros. Matamoros es conocido como la puerta de México por sus importantes rutas comerciales, tanto marítimas, como terrestres. La marca está basada en la escultura del artista “Sebastián”: La Gran Puerta de México. Los colores reflejan la calidez del clima y gente de Matamoros.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'jesus-roberto-cd.png',
+        'order_priority'    => 1
+      ],
+      'adversiting-campaign'  => [
+        'description'       => 'Se creó la línea gráfica para la campaña del candidato a presidente municipal de Matamoros en las elecciones de junio del 2016.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'jesus-roberto-ac.png',
+        'order_priority'    => 1
+      ],
+      // 'information-systems'   => 1
     ],
 
     'start-point' => [
-      'corporative-image'     => 2,
-      'social-network'        => 1,
-      'adversiting-campaign'  => 2,
-      'information-systems'   => 2
+      'corporative-image'     => [
+        'description'       => 'Imagen para oficinas de coworking dirigidas a un sector joven y emprendedor. El coworking es un concepto donde varios profesionistas trabajan juntos es un espacio donde se intercambian ideas y conocimientos. La marca se conforma de un símbolo a base de hexágonos, que semejan un panal de abejas, ejemplo de comunidad, esfuerzo, libertad e independencia. Manteniendo la imagen gráfica de la marca, se realizó el contenido para sus redes sociales.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'start-point-cd.png',
+        'order_priority'    => 2
+      ],
+      'social-network' => [
+        'description'       => 'Se crearon distintos posts y gifs con gráficos atractivos que comunicaran el significado y los beneficios de coworking.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'start-point-sn.png',
+        'order_priority'    => 1
+      ],
+      //'adversiting-campaign'  => 2,
+      //'information-systems'   => 2
     ],
 
     'galeria-laberynto' => [
-      'corporative-image'     => 3,
-      'editorial-design'      => 2,
-      'adversiting-campaign'  => 3
+      'corporative-image' => [
+        'description'       => 'Imagen generada para galería de artes plásticas, en Querétaro. Esta marca ilustra, tanto el contenido como el recorrido que ocurre en una galería de arte. Se realizó un folleto que sirvió como soporte impreso para la inauguración.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'galeria-laberynto-cd.png',
+        'order_priority'    => 3
+      ],
+      'editorial-design' => [
+        'description'       => 'Se generó una retícula con base en la marca, que sirvió como soporte para el folleto de inauguración donde se encontraban las obras y los autores expuestos para la apertura de la galería.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'galeria-laberynto-ed.png',
+        'order_priority'    => 2
+      ],
+      //'adversiting-campaign'  => 3
     ],
 
     'imaginarium' => [
-      'corporative-image'     => 4,
-      'editorial-design'      => 1,
-      'adversiting-campaign'  => 4
+      'corporative-image' => [
+        'description'       => 'Imagen creada para la quinta edición de la pasarela de los alumnos del Instituto Via Diseño. Se realizó una campaña integral que reflejara el concepto de “imaginarium” (concepto rector de la pasarela), manteniendo la elegancia que caracteriza a la moda. Uno de los soportes generados fue un pequeño libro con datos de los diseñadores.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'imaginarium-cd.png',
+        'order_priority'    => 4
+      ],
+      'editorial-design' => [
+        'description'       => 'Soporte impreso a modo de libro pequeño para la quinta edición de la pasarela de los alumnos del Instituto Via Diseño.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'imaginarium-ed.png',
+        'order_priority'    => 1
+      ],
+      // 'adversiting-campaign'  => 4
     ],
 
     'saazil' => [
-      'corporative-image'     => 5,
-      'adversiting-campaign'  => 5
+      'corporative-image' => [
+        'description'       => 'Desarrollo de marca para empresa mexicana de sistemas fotovoltaicos en la Ciudad de México. La marca se compone de dos elementos: logotipo e isotipo. El logotipo (palabra Saazil) es un vocablo Maya, que significa Luz. El isotipo está conformado de trángulos, que en conjunto con la forma final y el color, remiten al sol.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'saazil-cd.png',
+        'order_priority'    => 5
+      ],
+      'social-network' => [
+        'description'       => 'Se generó una serie de post apegados a la campaña informativa de la empresa.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'saazil-sn.png',
+        'order_priority'    => 3
+      ]
+      //'adversiting-campaign'  => 5
     ],
 
     'llaza' => [
-      'corporative-image'     => 6
+      'corporative-image' => [
+        'description'       => 'Desarrollo de marca para inmobiliaria queretana.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'llaza-cd.png',
+        'order_priority'    => 6
+      ]
     ],
 
     'torneo-de-la-amistad' => [
-      'corporative-image'     => 7
+      'corporative-image' => [
+        'description'       => 'Se diseñó una campaña integral para la imagen local del torneo de la amistad del año 2015, que tuvo sede en la ciudad de Querétaro. La marca refleja la diversidad e integridad del evento, sin perder el concepto de competencia. Con base en la marca, se realizó la señalética para el lugar del evento.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'torneo-de-la-amistad-cd.png',
+        'order_priority'    => 7
+      ],
+      'information-systems' => [
+        'description'       => 'Se realizó la señalética para el lugar del evento con base en el flujo de tránsito dentro del espacio donde se llevó a cabo el evento, se diseñó la señalética. Está diseñado pensada específicamente en el usuario: los niños. Es por eso que el diseño contiene una estética infantil, donde el protagonista es el niño.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'torneo-de-la-amistad-is.png',
+        'order_priority'    => 1
+      ]
     ],
 
     'ornamenta' => [
-      'corporative-image'     => 8
+      'corporative-image' => [
+        'description'       => 'Desarrollo de marca para joyería mexicana que actualmente distribuye en las tiendas Pineda Covalín.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'ornamenta-cd.png',
+        'order_priority'    => 8
+      ]
     ],
 
     'a-brief-love-of-affairs' => [
-      'corporative-image'     => 9
+      'corporative-image' => [
+        'description'       => 'Desarrollo de marca para galería de arte en Nueva York en el barrio de Chelsea.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'a-brief-love-of-affairs-cd.png',
+        'order_priority'    => 9
+      ] 
     ],
 
     'ana-telletxea' => [
-      'corporative-image'     => 10
+      'corporative-image' => [
+        'description'       => 'Imagen para la marca de la diseñadora de moda Ana Telletxea. Es una marca para mujeres jóvenes, que recurre a la firma de la diseñadora para darle autenticidad. Al usar su nombre como marca, se mimetiza con las mujeres que usan sus prendas, volviéndose una mujer más y no un objeto de deseo.',
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => 'ana-telletxea-cd.png',
+        'order_priority'    => 10
+      ]
     ],
 
     'antigua-altamira' => [
-      'editorial-design'      => 3
+      'editorial-design' => [
+        'description'     => 'Se generaron distintos soportes impresos que facilitaran la comunicación interna de los departamentos ubicados en el centro histórico de la ciudad de Querétaro, así como soportes para atraer futuros huéspedes como postales e infografías.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'antigua-altamira-ed.png',
+        'order_priority'  => 3
+      ]
     ],
 
     'holliday-inn' => [
-      'social-network'        => 2
+      'social-network' => [
+        'description'     => '',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'holliday-inn-sn.png',
+        'order_priority'  => 2
+      ]
+    ],
+
+    'abkam' => [
+      'adversiting-campaign' => [
+        'description'     => 'Se diseñó una campaña de publicidad a partir del copy proporcionado por el director creativo de la agencia. El propósito de la campaña era publicitar a la agencia de publicidad, fusionando objetos antagónicos para crear algo nuevo.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'abkam-ac.png',
+        'order_priority'  => 2
+      ]
+    ],
+
+    'crayola' => [
+      'adversiting-campaign' => [
+        'description'     => 'Se creó una campaña publicitaria donde el objetivo principal era relacionar la diversidad de la población mundial con la de las crayolas. Ejercicio en colaboración con alumna de la Universidad Anáhuac Querétaro, Sara Muradás.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'crayola-ac.png',
+        'order_priority'  => 3
+      ]
+    ],
+
+    'zote' => [
+      'adversiting-campaign' => [
+        'description'     => 'Se creó una campaña publicitaria donde demostraba la eficacia del producto de una manera divertida. Ejercicio en colaboración con alumnos de la Universidad Anáhuac Querétaro, Sofía de la Vega y Ana Lucía Castro Reinhold.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'zote-ac.png',
+        'order_priority'  => 4
+      ]
+    ],
+
+    'swarovsky' => [
+      'photography' => [
+        'description'     => 'Fotografía de producto.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'swarovsky-p.png',
+        'order_priority'  => 1
+      ]
     ],
 
     'coca-cola' => [
-      'photography'           => 2
+      'photography' => [
+        'description'     => 'Fotografía de producto.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'coca-cola-p.png',
+        'order_priority'  => 2
+      ]
+    ],
+
+    'jumex' => [
+      'photography' => [
+        'description'     => 'Fotografía de producto.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'jumex-p.png',
+        'order_priority'  => 3
+      ]
+    ],
+
+    'converse' => [
+      'illustration' => [
+        'description'     => 'Ilustración realizada con técnica gouache.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'converse-i.png',
+        'order_priority'  => 1
+      ]
+    ],
+
+    'sperry' => [
+      'illustration' => [
+        'description'     => 'Ilustración realizada con técnica gouache.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'sperry-i.png',
+        'order_priority'  => 2
+      ]
+    ],
+
+    'retrato' => [
+      'illustration' => [
+        'description'     => 'Ilustración realizada con técnica lápiz.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'retrato-i.png',
+        'order_priority'  => 3
+      ]
+    ],
+
+    'pajaro' => [
+      'illustration' => [
+        'description'     => 'Ilustración realizada con técnica prismacolor.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'pajaro-i.png',
+        'order_priority'  => 4
+      ]
+    ],
+
+    'dia-anahuac' => [
+      'cartel' => [
+        'description'     => 'Cartel para la imagen del Día Anáhuac 2015.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'dia-anahuac-c.png',
+        'order_priority'  => 1
+      ]
+    ],
+
+    'dia-de-muertos' => [
+      'cartel' => [
+        'description'     => 'Este cartel promueve la fiesta mexicana del día de muertos.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'dia-de-muertos-c.png',
+        'order_priority'  => 2
+      ]
+    ],
+
+    'trata-de-personas' => [
+      'cartel' => [
+        'description'     => 'Cartel sobre la trata de personas con base en la tendencia “New Typography”. Este cartel fue expuesto en el Museo de la Ciudad en el centro histórico de la ciudad de Querétaro.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'trata-de-personas-c.png',
+        'order_priority'  => 3
+      ]
+    ],
+
+    'energia-sustentable' => [
+      'cartel' => [
+        'description'     => 'Este cartel promueve la sustentabilidad.',
+        'cover_page_path' => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'  => 'energia-sustentable-c.png',
+        'order_priority'  => 4
+      ]
     ]
   ]
 ];

@@ -2,7 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2G&T | @yield('title')</title>
+  <title>2G&T | @yield('title', 'Soluciones Gráficas')</title>
+  <!-- START [Favicon] -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{!! asset('public/assets/img/favicon/apple-touch-icon.png') !!}">
+  <link rel="icon" type="image/png" href="{!! asset('public/assets/img/favicon/favicon-32x32.png') !!}" sizes="32x32">
+  <link rel="manifest" href="{!! asset('public/assets/img/favicon/manifest.json') !!}">
+  <link rel="mask-icon" href="{!! asset('public/assets/img/favicon/safari-pinned-tab.svg') !!}" color="#333333">
+  <meta name="theme-color" content="#ffffff">
+  <!-- END [Favicon] -->
   <!-- START [Cascade Style Sheet Files] -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/animate.css') !!}">
