@@ -22,4 +22,8 @@ class Client extends Model
   public function getCoverPageLinkAttribute() {
     return $this->attributes['cover_page_link'] = $this->cover_page_image_path.$this->cover_page_image_url;
   }
+
+  public function getLogoLinkAttribute() {
+    return $this->attributes['logo_link'] = $this->logo_path.$this->logo_url;
+  }
 }

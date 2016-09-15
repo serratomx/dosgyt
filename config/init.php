@@ -21,7 +21,7 @@ return [
   
   'portfolio' => [
     'corporative-image' => [
-      'name'  => 'Imagen corporativa',
+      'name'      => 'Imagen corporativa'
     ],
 
     'editorial-design' => [
@@ -55,43 +55,69 @@ return [
 
   'clients' => [
     'jesus-roberto' => [
-      'name' => 'Jesús Roberto'
+      'name'      => 'Jesús Roberto',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'jesus-roberto.png'
     ],
 
     'start-point' => [
-      'name' => 'Start Point'
+      'name' => 'Start Point',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'start-point.png'
     ],
 
     'galeria-laberynto' => [
-      'name' => 'Galería Laberynto'
+      'name' => 'Galería Laberynto',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'galeria-laberynto.png'
     ],
 
     'imaginarium' => [
-      'name' => 'Imaginarium'
+      'name' => 'Imaginarium',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'imaginarium.png'
     ],
 
     'saazil' => [
-      'name' => 'Saazil'
+      'name' => 'Saazil',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'saazil.png'
     ],
 
     'llaza' => [
-      'name' => 'Llaza'
+      'name' => 'Llaza',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'llaza.png'
     ],
 
     'torneo-de-la-amistad' => [
-      'name' => 'Torneo de la Amistad'
+      'name' => 'Torneo de la Amistad',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'torneo-de-la-amistad.png'
     ],
 
     'ornamenta' => [
-      'name' => 'Ornamenta'
+      'name' => 'Ornamenta',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'ornamenta.png'
     ],
 
-    'a-brief-love-of-affairs' => [
-      'name' => 'A brief love of affairs'
+    'a-brief-love-affair' => [
+      'name' => 'A brief love of affairs',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'a-brief-love-affair.png'
     ],
 
     'ana-telletxea' => [
-      'name' => 'Ana Telletxea'
+      'name' => 'Ana Telletxea',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'ana-telletxea.png'
+    ],
+
+    'i-do-2' => [
+      'name' => 'Ido2',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'i-do-2.png'
     ],
 
     'antigua-altamira' => [
@@ -274,11 +300,11 @@ return [
       ]
     ],
 
-    'a-brief-love-of-affairs' => [
+    'a-brief-love-affair' => [
       'corporative-image' => [
         'description'       => 'Desarrollo de marca para galería de arte en Nueva York en el barrio de Chelsea.',
         'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
-        'cover_page_url'    => 'a-brief-love-of-affairs-cd.png',
+        'cover_page_url'    => 'a-brief-love-affair-cd.png',
         'order_priority'    => 9
       ] 
     ],
@@ -289,6 +315,22 @@ return [
         'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'    => 'ana-telletxea-cd.png',
         'order_priority'    => 10
+      ]
+    ],
+
+    'i-do-2' => [
+      'corporative-image' => [
+        'description'       => null,
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => null,
+        'order_priority'    => 11
+      ],
+
+      'social-network' => [
+        'description'       => null,
+        'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
+        'cover_page_url'    => null,
+        'order_priority'    => 4
       ]
     ],
 
@@ -303,7 +345,7 @@ return [
 
     'holliday-inn' => [
       'social-network' => [
-        'description'     => '',
+        'description'     => null,
         'cover_page_path' => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'  => 'holliday-inn-sn.png',
         'order_priority'  => 2

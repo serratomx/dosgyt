@@ -4,6 +4,13 @@
 <div class="container-fluid app-portfolio">
   <div class="row">
     <div class="col-xs-12 no-side-padding">
+      <header>
+        <div class="header">
+          <h1 class="title">Portafolio</h1>
+        </div>
+      </header>
+    </div>
+    <div class="col-xs-12 text-center no-side-padding">
       <ul class="tablist" role="tablist">
         <?php 
           $menuSearch = App\Submenu::whereKeyword('portfolio');
@@ -30,33 +37,16 @@
         ?>
         @foreach ($menu->submenues as $submenu)
           <div id="{{ $submenu->keyword }}" class="tab-pane {!! ($submenu->keyword == $tabActive) ? 'active' : '' !!}" role="tabpanel">
-            <div class="col-xs-12 no-side-padding">
+            <div class="col-xs-12 custom-padding-1">
               <?php
                 $num_clients = $submenu->clients->count();
-                $remaining_clients = ($num_clients % 4);
-                $last_clients = $num_clients - $remaining_clients; 
                 $i = 0;
-                $j = 0;
-                $prev = 0;
               ?>
               @foreach ($submenu->clients()->orderBy('order_priority', 'ASC')->get() as $client)
-                @if ($i >= $last_clients) 
-                  @if ($remaining_clients == 3)
-                    <div class="col-xs-4 no-side-padding">
-                  @elseif ($j == 0 and $remaining_clients == 2)
-                    <div class="col-xs-offset-3 col-xs-3 no-side-padding">
-                  @elseif ($j == 1 and $remaining_clients == 2)
-                    <div class="col-xs-3 no-side-padding">
-                  @elseif ($remaining_clients == 1)
-                    <div class="col-xs-offset-4 col-xs-4 no-side-padding">
-                  @endif
-                  <?php ++$j ?>
-                @else 
                   <div class="col-xs-3 no-side-padding">
-                @endif
-                    <div id="client-container-{!! $i !!}" class="client-container hidden col-xs-12 no-side-padding text-center">
+                    <div id="client-container-{!! $i !!}" class="client-container hidden col-xs-12 no-side-padding text-center hvr-grow">
                       <a href="#" title="Ver {!! $client->name !!}">
-                        <div class="client-image img-circle s100x100 inline-block" style="background-image: url({!! asset('public/assets/img/bg-transparent-black.png') !!}), url({!! asset($client->pivot->cover_page_path.$client->pivot->cover_page_url) !!});"></div>
+                        <div class="client-image inline-block" style="background-image: url({!! asset($client->logo_link) !!});"></div>
                       </a>
                     </div>
                   </div>

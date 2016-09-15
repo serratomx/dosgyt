@@ -31,7 +31,7 @@ class CreateClientsTable extends Migration
       $table->integer('client_id')->unsigned();
       $table->integer('submenu_id')->unsigned();
       $table->integer('order_priority');
-      $table->text('description');
+      $table->text('description')->nullable();
       $table->string('cover_page_path')->nullable();
       $table->string('cover_page_url')->nullable();
       $table->timestamps();

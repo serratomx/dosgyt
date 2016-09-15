@@ -39,16 +39,17 @@ body {
 
 .app-navbar-space {
   width: 1px;
-  height: 115px;
+  height: 98px;
   display: block;
 }
 
 .app-navbar > .logo-container .img-logo {
   margin: 26px 45px 20px;
+  width: 134px;
 }
 
 .app-navbar > .button-container .menu-button {
-  margin: 26px 45px 20px;
+  margin: 18px 45px 14px;
   padding: 6px 16px;
   font-size: 36px;
   border: 1px solid #e8e8e8;
@@ -290,8 +291,12 @@ body {
 /* [PORTFOLIO PAGE]
    ========================================================================= */
 
-.app-portfolio {
-  text-align: center;
+.app-portfolio .header > .title {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  padding-left: 90px;
+  font-size: 28px;
+  font-weight: normal;
 }
 
 .app-portfolio ul.tablist {
@@ -335,14 +340,19 @@ body {
 }
 
 .app-portfolio .tab-content > .tab-pane .client-container {
-  padding: 25px 15px;
+  margin-top: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 42px;
 }
 
 .app-portfolio .tab-content > .tab-pane .client-container .client-image {
+  width: 82%;
+  height: 120px;
   cursor: pointer;
-  background-size: 180px 180px, 180px 180px;
-  background-position: center center, center center;
-  background-repeat: no-repeat, no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .app-portfolio .tab-content > .tab-pane .client-container .client-image:hover {
@@ -351,7 +361,6 @@ body {
   -ms-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s;
-  background-size: 216px 216px;
 }
 
 .app-portfolio .tab-content > .tab-pane .client-container.fadeInUp {
