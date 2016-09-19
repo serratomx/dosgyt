@@ -51,7 +51,14 @@
                       @if ($menu->submenues->count() > 0)
                         <ul class="submenu-dropdown">
                           @foreach ($menu->submenues as $submenu)
-                            <li><a href="{!! URL::to('/'.$menu->keyword.'/'.$submenu->keyword) !!}">{!! $submenu->name !!}</a></li>
+                            <?php $k = $submenu->keyword; ?>
+                            @if ($k == 'corporate-identity' or
+                                 $k == 'editorial-design' or 
+                                 $k == 'social-network')
+                              <li><a href="{!! URL::to('/'.$menu->keyword.'/'.$submenu->keyword) !!}">{!! $submenu->name !!}</a></li>
+                            @else
+                              <li><a href="{!! URL::to('/'.$menu->keyword.'/'.$submenu->keyword.'/viewer') !!}">{!! $submenu->name !!}</a></li>
+                            @endif
                           @endforeach
                         </ul>
                       @endif

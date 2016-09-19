@@ -15,15 +15,25 @@ class Client extends Model
     'logo_url'
   ];
 
+  protected $hidden = [
+    'id',
+  ];
+
   public function submenues() {
     return $this->belongsToMany('App\Submenu', 'client_submenu')->withPivot(['order_priority', 'description', 'cover_page_path', 'cover_page_url'])->withTimestamps();
   }
 
-  public function getCoverPageLinkAttribute() {
-    return $this->attributes['cover_page_link'] = $this->cover_page_image_path.$this->cover_page_image_url;
-  }
-
   public function getLogoLinkAttribute() {
     return $this->attributes['logo_link'] = $this->logo_path.$this->logo_url;
+  }
+
+  public function cover_page_link($submenu_keyword) {
+    $pivot = $this->submenues()->where(['keyword' => $submenu_keyword])->first()->pivot;
+    return $pivot->cover_page_path . $pivot->cover_page_url;
+  }
+
+  public function description($submenu_keyword) {
+    $pivot = $this->submenues()->where(['keyword' => $submenu_keyword])->first()->pivot;
+    return $pivot->description;
   }
 }

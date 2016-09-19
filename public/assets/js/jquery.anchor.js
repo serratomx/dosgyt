@@ -10,10 +10,10 @@ jQuery.fn.anchorAnimate = function(settings) {
       var locationHref = window.location.href
       var elementClick = $(caller).attr("href")
       var destination = $(elementClick).offset().top;
-      var $header = $('#header .logo-container');
+      var $navbar = $('#navbar');
 
-      if ($header.length == 1) {
-        destination -= $header.height();
+      if ($navbar.length == 1) {
+        destination -= $navbar.height();
       }
       
       $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {

@@ -31,7 +31,7 @@ class CreateSubmenuesTable extends Migration
       $submenues = config('init.submenues');
 
       foreach ($submenues as $keyword => $attr) {
-        $menu->submenues()->create(['keyword' => $keyword, 'name' => $attr['name'], 'url' => empty($attr['url']) ?: $attr['url']]);
+        $menu->submenues()->create(['keyword' => $keyword, 'name' => $attr['name'], 'url' => empty($attr['url']) ? null : $attr['url']]);
       }
 
       $menu = Submenu::whereName('Portafolio');
@@ -41,7 +41,7 @@ class CreateSubmenuesTable extends Migration
         $submenues = config('init.portfolio');
 
         foreach ($submenues as $keyword => $attr) {
-          $menu->submenues()->create(['keyword' => $keyword, 'name' => $attr['name'], 'url' => empty($attr['url']) ?: $attr['url']]);
+          $menu->submenues()->create(['keyword' => $keyword, 'name' => $attr['name'], 'url' => empty($attr['url']) ? null : $attr['url']]);
         }
       }
     }

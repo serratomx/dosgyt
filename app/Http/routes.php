@@ -32,5 +32,18 @@ Route::group(['as' => 'site.'], function(){
       'as'    =>  'index',
       'uses'  => 'PortfolioController@index'
     ]);
+
+    Route::group(['prefix' => '{submenu}/viewer', 'as' => 'viewer.'], function() {
+
+      Route::get('/{client}.json', [
+        'as'    => 'client.json',
+        'uses'  => 'PortfolioController@json_for_viewer'
+      ]);
+
+      Route::get('/{client?}', [
+        'as'    => 'index',
+        'uses'  => 'PortfolioController@viewer'
+      ]);
+    });
   });
 });

@@ -16,4 +16,22 @@ $(function(){
     .slideUp(200);
   });
 
+  $('.anchorLink').anchorAnimate();
+
+  $btnMenu.hover(
+  function(){
+    var $this = $(this);
+
+    $('.dropdown-menu', $this).stop(true, true)
+    .slideDown(200, function() {
+      $(this).css('min-height', '368px');
+    });
+  }, 
+  function(){
+    var $this = $(this);
+
+    $('.dropdown-menu', $this).stop(true, true)
+    .css('min-height', '')
+    .slideUp(200);
+  });
 });

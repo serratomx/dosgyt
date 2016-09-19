@@ -21,9 +21,18 @@
             $i = 0;
           ?>
           @foreach ($menu->submenues as $submenu)
-            <li role="presentation" class="{!! ($submenu->keyword == $tabActive) ? 'active' : '' !!}">
-              <a aria-controls="{{ $submenu->name }}" data-title="{{ $submenu->name }}" data-url="{{ URL::to('/portfolio/' . $submenu->keyword) }}" data-id="{{ $submenu->keyword }}" role="tab" data-toggle="tab" href="#{{ $submenu->keyword }}">{!! $submenu->name !!}</a>
-            </li>
+            <?php $k = $submenu->keyword ?>
+            @if ($k == 'corporate-identity' or
+                 $k == 'editorial-design' or 
+                 $k == 'social-network')
+              <li role="presentation" class="{!! ($submenu->keyword == $tabActive) ? 'active' : '' !!}">
+                <a aria-controls="{{ $submenu->name }}" data-title="{{ $submenu->name }}" data-url="{{ URL::to('/portfolio/'.$submenu->keyword) }}" data-id="{{ $submenu->keyword }}" role="tab" data-toggle="tab" href="#{{ $submenu->keyword }}">{!! $submenu->name !!}</a>
+              </li>
+            @else 
+              <li>
+                <a href="{{ URL::to('/portfolio/'.$submenu->keyword.'/viewer') }}">{!! $submenu->name !!}</a>
+              </li>
+            @endif
             <?php ++$i ?>
           @endforeach
         @endif
@@ -42,16 +51,44 @@
                 $num_clients = $submenu->clients->count();
                 $i = 0;
               ?>
-              @foreach ($submenu->clients()->orderBy('order_priority', 'ASC')->get() as $client)
-                  <div class="col-xs-3 no-side-padding">
-                    <div id="client-container-{!! $i !!}" class="client-container hidden col-xs-12 no-side-padding text-center hvr-grow">
-                      <a href="#" title="Ver {!! $client->name !!}">
-                        <div class="client-image inline-block" style="background-image: url({!! asset($client->logo_link) !!});"></div>
-                      </a>
+              @if ($submenu->keyword == 'corporate-identity')
+                @foreach ($submenu->clients()->orderBy('order_priority', 'ASC')->get() as $client)
+                    <div class="col-xs-3 no-side-padding">
+                      <div id="client-container-{!! $i !!}" class="client-container hidden col-xs-12 no-side-padding text-center hvr-grow">
+                        <a href="{!! URL::to('/portfolio/'.$submenu->keyword.'/viewer/'.$client->keyword) !!}" title="Ver {!! $client->name !!}">
+                          <div class="client-image inline-block" style="background-image: url({!! asset($client->logo_link) !!});"></div>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                <?php ++$i ?>
-              @endforeach
+                  <?php ++$i ?>
+                @endforeach
+              @elseif ($submenu->keyword == 'editorial-design')
+                @foreach ($submenu->clients()->orderBy('order_priority', 'ASC')->get() as $client)
+                    <div class="col-xs-12 no-side-padding">
+                      <div class="col-xs-3 col-xs-offset-1 no-side-padding">
+                        <div id="client-container-{!! $i !!}" class="client-container hidden col-xs-12 no-side-padding text-center hvr-grow">
+                          <a href="{!! URL::to('/portfolio/'.$submenu->keyword.'/viewer/'.$client->keyword) !!}" title="Ver {!! $client->name !!}">
+                            <div class="client-image inline-block" style="background-image: url({!! asset($client->logo_link) !!});"></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  <?php ++$i ?>
+                @endforeach
+              @elseif ($submenu->keyword == 'social-network')
+                @foreach ($submenu->clients()->orderBy('order_priority', 'ASC')->get() as $client)
+                    <div class="col-xs-12 no-side-padding">
+                      <div class="col-xs-3 col-xs-offset-3 no-side-padding">
+                        <div id="client-container-{!! $i !!}" class="client-container hidden col-xs-12 no-side-padding text-center hvr-grow">
+                          <a href="{!! URL::to('/portfolio/'.$submenu->keyword.'/viewer/'.$client->keyword) !!}" title="Ver {!! $client->name !!}">
+                            <div class="client-image inline-block" style="background-image: url({!! asset($client->logo_link) !!});"></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  <?php ++$i ?>
+                @endforeach
+              @endif
             </div>
           </div>
           <?php ++$i ?>

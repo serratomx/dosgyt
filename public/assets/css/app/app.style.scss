@@ -371,51 +371,90 @@ body {
   animation-duration: .8s;
 }
 
-/* [OTHER PAGE]
+/* [VIEWER PAGE]
    ========================================================================= */
 
-.app-jumbotron > .carousel > .carousel-inner > .item > img {
-  width: 100%;
+.app-viewer .app-jumbotron > .carousel > .carousel-inner > .item {
+  background-color: #CCCCCC;
 }
 
-.app-jumbotron > .carousel > .carousel-inner > .item > .carousel-caption {
+.app-viewer .app-jumbotron > .carousel > .carousel-inner > .item > img {
+  width: 100%;
+  max-height: 545px;
+}
+
+.app-viewer .app-jumbotron > .carousel > .carousel-inner > .item > .carousel-caption {
   padding-top: 15px !important;
   padding-bottom: 15px !important;
 }
 
-.app-jumbotron > .carousel > .carousel-inner > .item > .carousel-caption > h3 {
+.app-viewer .app-jumbotron > .carousel > .carousel-inner > .item > .carousel-caption > h3 {
   font-size: 24px;
 }
 
-.app-jumbotron > .carousel > .carousel-inner > .item > .carousel-caption > p {
+.app-viewer .app-jumbotron > .carousel > .carousel-inner > .item > .carousel-caption > p {
   font-size: 16px;
 }
 
-.app-other-content {
+.app-viewer .app-description-container {
   padding: 45px;
 }
 
-.app-other-content .header {
+.app-viewer .app-description-container .header {
   margin-bottom: 30px;
 }
 
-.app-other-content .header > h1 {
+.app-viewer .app-description-container .header > h1 {
   font-size: 48px;
   font-weight: bold;
 }
 
-.app-other-content .header > h2 {
+.app-viewer .app-description-container .header > h2 {
   font-size: 42px;
   font-weight: lighter;
 }
 
-.app-other-content .content {
+.app-viewer .app-description-container .content {
   margin-bottom: 30px;
 }
 
-.app-other-content .content p {
+.app-viewer .app-description-container .content p {
   font-size: 22px;
   font-weight: lighter;
+}
+
+.app-viewer .app-tools {
+  padding: 65px 45px 45px 45px;
+}
+
+.app-viewer .app-tools .app-button {
+  font-size: 24px;
+  color: #000000;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.app-viewer .app-tools .app-button:hover,
+.app-viewer .app-tools .app-button:focus,
+.app-viewer .app-tools .app-button:active {
+  border-color: #a0a0a0;
+}
+
+.app-viewer .app-tools .app-button.disabled {
+  cursor: not-allowed !important;
+  color: #CCCCCC;
+}
+
+.app-viewer .app-tools .app-prev-item {
+  padding-left: 14px;
+}
+
+.app-viewer .app-tools .app-next-item {
+  margin-left: 8px;
+  padding-right: 14px;
 }
 
 /* RESPONSIVE
