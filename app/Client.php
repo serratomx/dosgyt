@@ -16,7 +16,7 @@ class Client extends Model
   ];
 
   protected $hidden = [
-    'id',
+    'id'
   ];
 
   public function submenues() {

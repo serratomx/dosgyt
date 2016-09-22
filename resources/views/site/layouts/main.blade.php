@@ -48,7 +48,7 @@
                       <?php 
                         $menu = $submenu;
                       ?>
-                      @if ($menu->submenues->count() > 0)
+                      @if ($menu->submenues->count() > 0 and $menu->keyword != 'services')
                         <ul class="submenu-dropdown">
                           @foreach ($menu->submenues as $submenu)
                             <?php $k = $submenu->keyword; ?>

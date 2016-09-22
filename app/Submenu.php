@@ -27,4 +27,8 @@ class Submenu extends Model
   public function clients() {
     return $this->belongsToMany('App\Client', 'client_submenu')->withPivot(['order_priority', 'description', 'cover_page_path', 'cover_page_url'])->withTimestamps();
   }
+
+  public function services() {
+    return $this->belongsToMany('App\Service', 'service_submenu')->withPivot(['order_priority', 'description'])->withTimestamps();
+  }
 }

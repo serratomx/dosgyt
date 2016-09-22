@@ -46,4 +46,12 @@ Route::group(['as' => 'site.'], function(){
       ]);
     });
   });
+
+  Route::group(['prefix' => 'services', 'as' => 'services.'], function(){
+    
+    Route::get('/', [
+      'as'    => 'index',
+      'uses'  => 'ServicesController@index'
+    ]); 
+  });
 });

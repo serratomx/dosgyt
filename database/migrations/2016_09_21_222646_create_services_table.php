@@ -2,10 +2,10 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-use App\Client;
 use App\Submenu;
+use App\Service;
 
-class CreateClientsTable extends Migration
+class CreateServicesTable extends Migration
 {
   /**
    * Run the migrations.
@@ -14,34 +14,30 @@ class CreateClientsTable extends Migration
    */
   public function up()
   {
-    Schema::create('clients', function(Blueprint $table) {
+    Schema::create('services', function(Blueprint $table) {
       $table->increments('id');
       $table->string('keyword', 32)->unique();
       $table->string('name');
-      $table->string('logo_path')->nullable();
-      $table->string('logo_url')->nullable();
       $table->timestamps();
     });
 
-    Schema::create('client_submenu', function(Blueprint $table) {
+    Schema::create('service_submenu', function(Blueprint $table){
       /**
-       * Client/Submenu - Fields
+       * Services/Submenu - Fields
        * ============================================================= //
        */
-      $table->integer('client_id')->unsigned();
+      $table->integer('service_id')->unsigned();
       $table->integer('submenu_id')->unsigned();
       $table->integer('order_priority');
       $table->text('description')->nullable();
-      $table->string('cover_page_path')->nullable();
-      $table->string('cover_page_url')->nullable();
       $table->timestamps();
-      
+
       /**
-       * Client/Submenu - Foreign Keys
+       * Services/Submenu - Foreign Keys
        * ============================================================= //
        */
-      $table->foreign('client_id')
-            ->references('id')->on('clients')
+      $table->foreign('service_id')
+            ->references('id')->on('services')
             ->onDelete('cascade');
             
       $table->foreign('submenu_id')
@@ -49,20 +45,20 @@ class CreateClientsTable extends Migration
             ->onDelete('cascade');
     });
 
-    $clients = config('init.clients');
+    $services = config('init.services_list');
 
-    foreach ($clients as $keyword => $attr) {
+    foreach ($services as $keyword => $attr) {
       $attr['keyword'] = $keyword;
-      $client = Client::create($attr);
+      $service = Service::create($attr);
     }
 
-    $client_submenu = config('init.client_submenu');
+    $service_submenu = config('init.service_submenu');
 
-    foreach ($client_submenu as $client => $submenues) {
-      $client = Client::whereKeyword($client);
+    foreach ($service_submenu as $service => $submenues) {
+      $service = Service::whereKeyword($service);
 
-      if ($client->count() == 1) {
-        $client = $client->first();
+      if ($service->count() == 1) {
+        $service = $service->first();
 
         foreach ($submenues as $submenu => $attr) {
           $submenu = Submenu::whereKeyword($submenu);
@@ -70,7 +66,7 @@ class CreateClientsTable extends Migration
           if ($submenu->count() == 1) {
             $submenu = $submenu->first();
 
-            $client->submenues()->attach([
+            $service->submenues()->attach([
               $submenu->id => $attr
             ]);
           }
@@ -86,7 +82,7 @@ class CreateClientsTable extends Migration
    */
   public function down()
   {
-    Schema::drop('client_submenu');
-    Schema::drop('clients');
+    Schema::drop('service_submenu');
+    Schema::drop('services');
   }
 }

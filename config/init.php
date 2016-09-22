@@ -7,7 +7,8 @@ return [
     ],
 
     'services' => [
-      'name'  => 'Servicios',      
+      'name'  => 'Servicios',
+      'url'   => '/services'
     ],
 
     'clients' => [
@@ -32,7 +33,7 @@ return [
       'name'  => 'Redes sociales',
     ],
 
-    'adversiting-campaign' => [
+    'advertising-campaign' => [
       'name'  => 'Campañas publicitarias', 
     ],
 
@@ -121,11 +122,15 @@ return [
     ],
 
     'antigua-altamira' => [
-      'name' => 'Antigua Altamira'
+      'name' => 'Antigua Altamira',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'antigua-altamira-2.png'
     ],
 
     'holliday-inn' => [
-      'name' => 'Holliday Inn'
+      'name' => 'Holliday Inn',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'holiday-inn.png'
     ],
 
     'abkam' => [
@@ -201,7 +206,7 @@ return [
         'cover_page_url'    => 'jesus-roberto-cd.png',
         'order_priority'    => 1
       ],
-      'adversiting-campaign'  => [
+      'advertising-campaign'  => [
         'description'       => 'Se creó la línea gráfica para la campaña del candidato a presidente municipal de Matamoros en las elecciones de junio del 2016.',
         'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'    => 'jesus-roberto-ac.png',
@@ -223,7 +228,7 @@ return [
         'cover_page_url'    => 'start-point-sn.png',
         'order_priority'    => 2
       ],
-      //'adversiting-campaign'  => 2,
+      //'advertising-campaign'  => 2,
       //'information-systems'   => 2
     ],
 
@@ -240,7 +245,7 @@ return [
         'cover_page_url'    => 'galeria-laberynto-ed.png',
         'order_priority'    => 2
       ],
-      //'adversiting-campaign'  => 3
+      //'advertising-campaign'  => 3
     ],
 
     'imaginarium' => [
@@ -256,7 +261,7 @@ return [
         'cover_page_url'    => 'imaginarium-ed.png',
         'order_priority'    => 1
       ],
-      // 'adversiting-campaign'  => 4
+      // 'advertising-campaign'  => 4
     ],
 
     'saazil' => [
@@ -272,7 +277,7 @@ return [
         'cover_page_url'    => 'saazil-sn.png',
         'order_priority'    => 3
       ]
-      //'adversiting-campaign'  => 5
+      //'advertising-campaign'  => 5
     ],
 
     'llaza' => [
@@ -324,7 +329,7 @@ return [
         'cover_page_url'    => 'ana-telletxea-cd.png',
         'order_priority'    => 10
       ],
-      'adversiting-campaign' => [
+      'advertising-campaign' => [
         'description'       => null,
         'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'    => 'ana-telletxea-ac.png',
@@ -336,7 +341,7 @@ return [
       'corporate-identity' => [
         'description'       => null,
         'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
-        'cover_page_url'    => null,
+        'cover_page_url'    => 'i-do-2-cd.png',
         'order_priority'    => 11
       ],
 
@@ -373,7 +378,7 @@ return [
     ],
 
     'abkam' => [
-      'adversiting-campaign' => [
+      'advertising-campaign' => [
         'description'     => 'Se diseñó una campaña de publicidad a partir del copy proporcionado por el director creativo de la agencia. El propósito de la campaña era publicitar a la agencia de publicidad, fusionando objetos antagónicos para crear algo nuevo.',
         'cover_page_path' => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'  => 'abkam-ac.png',
@@ -382,7 +387,7 @@ return [
     ],
 
     'crayola' => [
-      'adversiting-campaign' => [
+      'advertising-campaign' => [
         'description'     => 'Se creó una campaña publicitaria donde el objetivo principal era relacionar la diversidad de la población mundial con la de las crayolas. Ejercicio en colaboración con alumna de la Universidad Anáhuac Querétaro, Sara Muradás.',
         'cover_page_path' => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'  => 'crayola-ac.png',
@@ -391,7 +396,7 @@ return [
     ],
 
     'zote' => [
-      'adversiting-campaign' => [
+      'advertising-campaign' => [
         'description'     => 'Se creó una campaña publicitaria donde demostraba la eficacia del producto de una manera divertida. Ejercicio en colaboración con alumnos de la Universidad Anáhuac Querétaro, Sofía de la Vega y Ana Lucía Castro Reinhold.',
         'cover_page_path' => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'  => 'zote-ac.png',
@@ -502,7 +507,7 @@ return [
       'cartel' => [
         'description'     => null,
         'cover_page_path' => 'public/files/site/img/clients/cover_page/',
-        'cover_page_url'  => null,
+        'cover_page_url'  => 'big-bola-c.png',
         'order_priority'  => 5
       ]
     ],
@@ -511,8 +516,405 @@ return [
       'cartel' => [
         'description'     => null,
         'cover_page_path' => 'public/files/site/img/clients/cover_page/',
-        'cover_page_url'  => null,
+        'cover_page_url'  => 'mcm-c.png',
         'order_priority'  => 6
+      ]
+    ]
+  ],
+
+  'services' => [
+    's-corporate-identity' => [
+      'name' => 'Identidad corporativa'
+    ],
+
+    's-information-systems' => [
+      'name' => 'Sistemas de información visual'
+    ],
+
+    's-basic-stationery' => [
+      'name' => 'Papelería básica (paquete de 3 artículos)'
+    ],
+
+    's-editorial-design' => [
+      'name' => 'Diseño editorial'
+    ],
+
+    's-advertising' => [
+      'name' => 'Publicidad'
+    ],
+
+    's-other-services' => [
+      'name' => 'Otros servicios'
+    ],
+
+    's-digital-media' => [
+      'name' => 'Medios digitales'
+    ]
+  ],
+
+  'services_list' => [
+    'sl-naming' => [
+      'name' => 'Naming'
+    ],
+
+    'sl-brand' => [
+      'name' => 'Marca'
+    ],
+
+    'sl-corporate-image' => [
+      'name' => 'Imagen corporativa'
+    ],
+
+    'sl-identity-manual' => [
+      'name' => 'Manual de identidad'
+    ],
+
+    'sl-presentations' => [
+      'name' => 'Presentaciones'
+    ],
+
+    'sl-transit' => [
+      'name' => 'Desarrollo y logística de tránsito dentro de un espacio'
+    ],
+
+    'sl-signs-design' => [
+      'name' => 'Diseño de señalética'
+    ],
+
+    'sl-spectacular-design' => [
+      'name' => 'Diseño de espectaculares'
+    ],
+
+    'sl-parabus' => [
+      'name' => 'Parabus'
+    ],
+
+    'sl-business-cards' => [
+      'name' => 'Tarjetas de presentación'
+    ],
+
+    'sl-letterhead' => [
+      'name' => 'Hojas membretadas'
+    ],
+
+    'sl-folder' => [
+      'name' => 'Folder'
+    ],
+
+    'sl-bookmarkers' => [
+      'name' => 'Separadores de libros'
+    ],
+
+    'sl-credentials' => [
+      'name' => 'Credenciales'
+    ],
+
+    'sl-electronic-signature' => [
+      'name' => 'Firma electrónica'
+    ],
+
+    'sl-technical-specifications' => [
+      'name' => 'Fichas técnicas'
+    ],
+
+    'sl-editorial-design-for-books' => [
+      'name' => 'Diseño editorial para libros y revistas'
+    ],
+
+    'sl-coverpage' => [
+      'name' => 'Portadas'
+    ],
+
+    'sl-menu-design' => [
+      'name' => 'Diseño de menús'
+    ],
+
+    'sl-calendars' => [
+      'name' => 'Calendarios'
+    ],
+
+    'sl-infographics' => [
+      'name' => 'Infografías'
+    ],
+
+    'sl-literature' => [
+      'name' => 'Folletos'
+    ],
+
+    'sl-invitations' => [
+      'name' => 'Invitaciones'
+    ],
+
+    'sl-advertising-campaigns' => [
+      'name' => 'Campañas publicitarias'
+    ],
+
+    'sl-printed-media' => [
+      'name' => 'Soportes impresos'
+    ],
+
+    'sl-electronic-media' => [
+      'name' => 'Soportes electrónicos'
+    ],
+
+    'sl-product-photography' => [
+      'name' => 'Fotografía de producto'
+    ],
+
+    'sl-packaging' => [
+      'name' => 'Empaques'
+    ],
+
+    'sl-illustration' => [
+      'name' => 'Ilustración'
+    ],
+
+    'sl-decorative-muralismo' => [
+      'name' => 'Muralismo decorativo'
+    ],
+
+    'sl-web-page' => [
+      'name' => 'Página web'
+    ],
+    
+    'sl-social-networks' => [
+      'name' => 'Redes sociales'
+    ],
+
+    'sl-presentation-design' => [
+      'name' => 'Diseño de presentaciones'
+    ]
+  ],
+
+  'service_submenu' => [
+    'sl-naming' => [
+      's-corporate-identity' => [
+        'description'     => null,
+        'order_priority'  => 1
+      ]
+    ],
+
+    'sl-brand' => [
+      's-corporate-identity' => [
+        'description'     => null,
+        'order_priority'  => 2
+      ]
+    ],
+
+    'sl-corporate-image' => [
+      's-corporate-identity' => [
+        'description'     => null,
+        'order_priority'  => 3
+      ]
+    ],
+
+    'sl-identity-manual' => [
+      's-corporate-identity' => [
+        'description'     => null,
+        'order_priority'  => 4
+      ]
+    ],
+
+    'sl-presentations' => [
+      's-corporate-identity' => [
+        'description'     => null,
+        'order_priority'  => 5
+      ]
+    ],
+
+    'sl-transit' => [
+      's-information-systems' => [
+        'description'     => null,
+        'order_priority'  => 1
+      ]
+    ],
+
+    'sl-signs-design' => [
+      's-information-systems' => [
+        'description'     => null,
+        'order_priority'  => 2
+      ]
+    ],
+
+    'sl-spectacular-design' => [
+      's-information-systems' => [
+        'description'     => null,
+        'order_priority'  => 3
+      ]
+    ],
+
+    'sl-parabus' => [
+      's-information-systems' => [
+        'description'     => null,
+        'order_priority'  => 4
+      ]
+    ],
+
+    'sl-business-cards' => [
+      's-basic-stationery' => [
+        'description'     => null,
+        'order_priority'  => 1
+      ]
+    ],
+
+    'sl-letterhead' => [
+      's-basic-stationery' => [
+        'description'     => null,
+        'order_priority'  => 2
+      ]
+    ],
+
+    'sl-folder' => [
+      's-basic-stationery' => [
+        'description'     => null,
+        'order_priority'  => 3
+      ]
+    ],
+
+    'sl-bookmarkers' => [
+      's-basic-stationery' => [
+        'description'     => null,
+        'order_priority'  => 4
+      ]
+    ],
+
+    'sl-credentials' => [
+      's-basic-stationery' => [
+        'description'     => null,
+        'order_priority'  => 5
+      ]
+    ],
+
+    'sl-electronic-signature' => [
+      's-basic-stationery' => [
+        'description'     => null,
+        'order_priority'  => 6
+      ]
+    ],
+
+    'sl-technical-specifications' => [
+      's-basic-stationery' => [
+        'description'     => null,
+        'order_priority'  => 7
+      ]
+    ],
+
+    'sl-editorial-design-for-books' => [
+      's-editorial-design' => [
+        'description'     => null,
+        'order_priority'  =>  1 
+      ]
+    ],
+
+    'sl-coverpage' => [
+      's-editorial-design' => [
+        'description'     => null,
+        'order_priority'  =>  2 
+      ]
+    ],
+
+    'sl-menu-design' => [
+      's-editorial-design' => [
+        'description'     => null,
+        'order_priority'  =>  3
+      ]
+    ],
+
+    'sl-calendars' => [
+      's-editorial-design' => [
+        'description'     => null,
+        'order_priority'  =>  4
+      ]
+    ],
+
+    'sl-infographics' => [
+      's-editorial-design' => [
+        'description'     => null,
+        'order_priority'  =>  5
+      ]
+    ],
+
+    'sl-literature' => [
+      's-editorial-design' => [
+        'description'     => null,
+        'order_priority'  =>  6
+      ]
+    ],
+
+    'sl-invitations' => [
+      's-editorial-design' => [
+        'description'     => null,
+        'order_priority'  =>  7
+      ]
+    ],
+
+    'sl-advertising-campaigns' => [
+      's-advertising' => [
+        'description'     => null,
+        'order_priority'  => 1
+      ]
+    ],
+
+    'sl-printed-media' => [
+      's-advertising' => [
+        'description'     => null,
+        'order_priority'  => 2
+      ]
+    ],
+
+    'sl-electronic-media' => [
+      's-advertising' => [
+        'description'     => null,
+        'order_priority'  => 3
+      ]
+    ],
+
+    'sl-product-photography' => [
+      's-other-services' => [
+        'description'     => null,
+        'order_priority'  => 1
+      ]
+    ],
+
+    'sl-packaging' => [
+      's-other-services' => [
+        'description'     => null,
+        'order_priority'  => 2
+      ]
+    ],
+
+    'sl-illustration' => [
+      's-other-services' => [
+        'description'     => null,
+        'order_priority'  => 3
+      ]
+    ],
+
+    'sl-decorative-muralismo' => [
+      's-other-services' => [
+        'description'     => null,
+        'order_priority'  => 4
+      ]
+    ],
+
+    'sl-web-page' => [
+      's-digital-media' => [
+        'description'     => null,
+        'order_priority'  => 1
+      ]
+    ],
+
+    'sl-social-networks' => [
+      's-digital-media' => [
+        'description'     => null,
+        'order_priority'  => 2
+      ]
+    ],
+
+    'sl-presentation-design' => [
+      's-digital-media' => [
+        'description'     => null,
+        'order_priority'  => 3
       ]
     ]
   ]
