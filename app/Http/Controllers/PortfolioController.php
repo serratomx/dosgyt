@@ -37,7 +37,7 @@ class PortfolioController extends Controller
     if (!is_null($client)) {
       $this->params['client'] = Client::whereKeyword($client)->first();
     } else {
-      $this->params['client'] = $this->params['submenu']->clients->first();
+      $this->params['client'] = $this->params['submenu']->clients()->orderBy('order_priority', 'ASC')->first();
     }
 
     return view('site.portfolio.viewer.index')->with($this->params);
