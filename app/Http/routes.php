@@ -55,6 +55,14 @@ Route::group(['as' => 'site.'], function(){
     ]); 
   });
 
+  Route::group(['prefix' => 'our-clients', 'as' => 'ourClients.'], function() {
+
+    Route:::get('/', [
+      'as'    => 'index',
+      'uses'  => 'OurClients@index'
+    ]);
+  });
+
   Route::group(['prefix' => 'contact', 'as' => 'contact.'], function(){
     
     Route::get('/', [
@@ -62,14 +70,9 @@ Route::group(['as' => 'site.'], function(){
       'uses'    => 'ContactController@index'
     ]);
 
-    Route::post('/send', [
+    Route::get('/send', [
       'as'      => 'send',
       'uses'    => 'ContactController@send'
-    ]);
-
-    Route::get('/email', [
-      'as'      => 'email',
-      'uses'    => 'ContactController@email'
     ]);
   });
 });
