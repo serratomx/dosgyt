@@ -477,6 +477,88 @@ body {
   list-style: none;
 }
 
+/* [SERVICES PAGE]
+   ========================================================================= */
+
+.app-contact .header {
+  margin-bottom: 15px;
+}
+
+.app-contact .header > .title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-left: 90px;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.app-contact .contact-form-container {
+  margin-bottom: 30px;
+}
+
+.app-contact .contact-form-container .header {
+  text-align: center;
+}
+
+.app-contact .contact-form-container .header .title,
+.app-contact .contact-form-container .header .subtitle {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.app-contact .contact-form-container .header .subtitle {
+  font-size: 22px;
+}
+
+.app-contact .contact-form label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.app-contact .contact-form input,
+.app-contact .contact-form textarea {
+  border: 1px solid #000000;
+  box-shadow: none;
+}
+
+.app-contact .mail-icon,
+.app-contact .insta-icon,
+.app-contact .phone-icon,
+.app-contact .fb-icon {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.app-contact .mail-icon {
+  color: #62DA09;
+}
+
+.app-contact .fb-icon {
+  color: #337ab7;
+}
+
+.app-contact .insta-icon {
+  color: #DD55DD;
+}
+
+.app-contact .phone-icon {
+  color: #55ABDD;
+}
+
+.app-contact .phones-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.app-contact .contact-form .link {
+  text-decoration: none;
+}
+
+.app-contact .contact-form label.error {
+  margin-top: 6px;
+  color: red;
+}
+
 /* RESPONSIVE
    ========================================================================= */
 
@@ -484,6 +566,33 @@ body {
 
 /* PATCHES
    ========================================================================= */
+
+.btn-primary {
+  background-color: rgb(226, 21, 116);
+  border-color: rgb(226, 21, 116);
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active { 
+  background-color: rgb(255, 51, 146);
+  border-color: rgb(255, 51, 146);
+}
+
+a {
+  color: rgb(226, 21, 116);
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: rgb(255, 51, 146);
+}
 
 .btn,
 .modal-content {

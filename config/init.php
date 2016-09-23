@@ -17,6 +17,7 @@ return [
 
     'contact' => [
       'name'  => 'Contacto',
+      'url'   => '/contact'
     ]
   ],
   

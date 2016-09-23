@@ -12,6 +12,7 @@
   <!-- END [Favicon] -->
   <!-- START [Cascade Style Sheet Files] -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/jquery.loading.css') !!}">
   <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/animate.css') !!}">
   <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/hover.css') !!}">
   <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/bootstrap.min.css') !!}">
@@ -89,6 +90,7 @@
   </div>
   <!-- START [JavaScript Files] -->
   <script type="text/javascript" src="{!! asset('public/assets/js/jquery.min.js') !!}"></script>
+  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.loading.js') !!}"></script>
   <script type="text/javascript" src="{!! asset('public/assets/js/jquery.validate.js') !!}"></script>
   <script type="text/javascript" src="{!! asset('public/assets/js/jquery.anchor.js') !!}"></script>
   <script type="text/javascript" src="{!! asset('public/assets/js/bootstrap.min.js') !!}"></script>

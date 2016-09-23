@@ -54,4 +54,22 @@ Route::group(['as' => 'site.'], function(){
       'uses'  => 'ServicesController@index'
     ]); 
   });
+
+  Route::group(['prefix' => 'contact', 'as' => 'contact.'], function(){
+    
+    Route::get('/', [
+      'as'      => 'index',
+      'uses'    => 'ContactController@index'
+    ]);
+
+    Route::post('/send', [
+      'as'      => 'send',
+      'uses'    => 'ContactController@send'
+    ]);
+
+    Route::get('/email', [
+      'as'      => 'email',
+      'uses'    => 'ContactController@email'
+    ]);
+  });
 });
