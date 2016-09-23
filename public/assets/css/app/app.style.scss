@@ -579,7 +579,9 @@ body {
 
 .btn-primary:hover,
 .btn-primary:focus,
-.btn-primary:active { 
+.btn-primary:active,
+.btn-primary:active:hover,
+.btn-primary:active:focus { 
   background-color: rgb(255, 51, 146);
   border-color: rgb(255, 51, 146);
 }

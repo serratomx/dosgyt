@@ -40,13 +40,13 @@ class ContactController extends Controller
         $mail_sent = Mail::send('site.emails.contact', ['contact' => $contact], function ($m) use ($contact) {
           $m->from('dosgyt@dosgyt.com', '2G&T Server');
           $m->replyTo($contact['email'], $contact['name']);
-          $m->to('contacto@dosgyt.mx', 'Contacto 2G&T');
+          $m->to('contacto@dosgyt.com', 'Contacto 2G&T');
           $m->subject('[contacto] '.$contact['name'].' | 2G&T');
         });
 
         if ($mail_sent) {
           $res['status'] = 'SUCCESS';
-          $res['msg'] = '¡Mensaje enviado!';
+          $res['msg'] = '¡Solicitud de contacto enviada!';
         }
       } 
     } 
