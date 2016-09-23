@@ -59,7 +59,7 @@ Route::group(['as' => 'site.'], function(){
 
     Route::get('/', [
       'as'    => 'index',
-      'uses'  => 'OurClients@index'
+      'uses'  => 'OurClientsController@index'
     ]);
   });
 
