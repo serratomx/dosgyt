@@ -70,7 +70,7 @@ Route::group(['as' => 'site.'], function(){
       'uses'    => 'ContactController@index'
     ]);
 
-    Route::get('/send', [
+    Route::post('/send', [
       'as'      => 'send',
       'uses'    => 'ContactController@send'
     ]);
