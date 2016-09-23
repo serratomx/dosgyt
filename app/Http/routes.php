@@ -57,7 +57,7 @@ Route::group(['as' => 'site.'], function(){
 
   Route::group(['prefix' => 'our-clients', 'as' => 'ourClients.'], function() {
 
-    Route:::get('/', [
+    Route::get('/', [
       'as'    => 'index',
       'uses'  => 'OurClients@index'
     ]);
