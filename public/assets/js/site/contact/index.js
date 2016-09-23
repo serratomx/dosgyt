@@ -69,7 +69,7 @@ $(document).on('ready', function(){
         },
         success: function(res) {
           if (res.status == 'SUCCESS') {
-            $('#form-contact input, #form-contact textarea').each(function() {
+            $('input,textarea', $form).each(function() {
               var e = $(this);
 
               if(e.attr('type') != 'hidden') {
@@ -77,7 +77,7 @@ $(document).on('ready', function(){
               }
             });
 
-            $('#form-contact label.error').each(function() {
+            $('label.error', $form).each(function() {
               $(this).remove();
             });
             

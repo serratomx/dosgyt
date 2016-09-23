@@ -41,7 +41,7 @@ class ContactController extends Controller
           $m->from('dosgyt@dosgyt.com', '2G&T Server');
           $m->replyTo($contact['email'], $contact['name']);
           $m->to('contacto@dosgyt.com', 'Contacto 2G&T');
-          $m->subject('[contacto] '.$contact['name'].' | 2G&T');
+          $m->subject('[Contacto] '.$contact['name'].' | 2G&T');
         });
 
         if ($mail_sent) {
@@ -51,16 +51,5 @@ class ContactController extends Controller
       } 
     } 
     echo json_encode($res);
-  }
-
-  public function email() {
-    $this->params['contact'] = [
-      'name' => 'Michael Brandon Serrato Guerrero',
-      'company' => 'Serrato',
-      'telephone' => '4422332139',
-      'email' => 'mikebsg01@gmail.com',
-      'msg' => 'Este es un mensaje de prueba por parte del formulario de contacto.'
-    ];
-    return view('site.emails.contact')->with($this->params);
   }
 }
