@@ -1,7 +1,7 @@
 @extends('site.layouts.main')
 @section('title', 'Nuestros servicios')
 @section('content')
-<div class="container-fluid app-services">
+<div class="container-fluid app-services app-our-clients">
   <div class="row">
     <div class="col-xs-12 no-side-padding">
       <header>

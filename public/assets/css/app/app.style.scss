@@ -477,7 +477,45 @@ body {
   list-style: none;
 }
 
-/* [SERVICES PAGE]
+/* [OUR CLIENTS PAGE]
+   ========================================================================= */
+.app-our-clients .header {
+  margin-bottom: 5px;
+}
+
+.app-our-clients .header > .title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-left: 45px;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.app-our-clients .client-container {
+  margin-top: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 32px;
+}
+
+.app-our-clients .client-container .client-image {
+  width: 82%;
+  height: 120px;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.app-our-clients .client-container .client-image:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+/* [CONTACT PAGE]
    ========================================================================= */
 
 .app-contact .header {
@@ -548,6 +586,10 @@ body {
 .app-contact .phones-list {
   list-style: none;
   padding-left: 0;
+}
+
+.app-contact .contact-form .contact-data {
+  margin-left: 15px;
 }
 
 .app-contact .contact-form .link {

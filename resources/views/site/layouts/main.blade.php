@@ -12,12 +12,12 @@
   <!-- END [Favicon] -->
   <!-- START [Cascade Style Sheet Files] -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=latin-ext" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/jquery.loading.css') !!}">
-  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/animate.css') !!}">
-  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/hover.css') !!}">
-  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/bootstrap.min.css') !!}">
-  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/font-awesome.min.css') !!}">
-  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/style.css') !!}">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/jquery.loading.css?v='.time()) !!}">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/animate.css?v='.time()) !!}">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/hover.css?v='.time()) !!}">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/bootstrap.min.css?v='.time()) !!}">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/font-awesome.min.css?v='.time()) !!}">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/style.css?v='.time()) !!}">
   <!-- END [Cascade Style Sheet Files] -->
 </head>
 <body>
@@ -89,14 +89,14 @@
     </div>
   </div>
   <!-- START [JavaScript Files] -->
-  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.min.js') !!}"></script>
-  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.loading.js') !!}"></script>
-  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.validate.js') !!}"></script>
-  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.anchor.js') !!}"></script>
-  <script type="text/javascript" src="{!! asset('public/assets/js/bootstrap.min.js') !!}"></script>
-  <script type="text/javascript" src="{!! asset('public/assets/js/scrollspy.js') !!}"></script>
-  <script type="text/javascript" src="{!! asset('public/assets/js/parallax.js') !!}"></script>
-  <script type="text/javascript" src="{!! asset('public/assets/js/app.js') !!}"></script>
+  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.min.js?'.time()) !!}"></script>
+  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.loading.js?'.time()) !!}"></script>
+  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.validate.js?'.time()) !!}"></script>
+  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.anchor.js?'.time()) !!}"></script>
+  <script type="text/javascript" src="{!! asset('public/assets/js/bootstrap.min.js?'.time()) !!}"></script>
+  <script type="text/javascript" src="{!! asset('public/assets/js/scrollspy.js?'.time()) !!}"></script>
+  <script type="text/javascript" src="{!! asset('public/assets/js/parallax.js?'.time()) !!}"></script>
+  <script type="text/javascript" src="{!! asset('public/assets/js/app.js?'.time()) !!}"></script>
   <!-- END [JavaScript Files] -->
   @yield('scripts')
 </body>

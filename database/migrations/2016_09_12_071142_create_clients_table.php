@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Log;
 use App\Client;
 use App\Submenu;
 
@@ -56,6 +57,7 @@ class CreateClientsTable extends Migration
       $client = Client::create($attr);
     }
 
+
     $client_submenu = config('init.client_submenu');
 
     foreach ($client_submenu as $client => $submenues) {
@@ -63,6 +65,8 @@ class CreateClientsTable extends Migration
 
       if ($client->count() == 1) {
         $client = $client->first();
+
+        Log::info('Client: '.json_encode($client->name));
 
         foreach ($submenues as $submenu => $attr) {
           $submenu = Submenu::whereKeyword($submenu);
@@ -73,6 +77,8 @@ class CreateClientsTable extends Migration
             $client->submenues()->attach([
               $submenu->id => $attr
             ]);
+
+            Log::info('Después: '.json_encode($client->submenues));
           }
         }
       }

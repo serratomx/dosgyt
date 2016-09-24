@@ -11,8 +11,9 @@ return [
       'url'   => '/services'
     ],
 
-    'clients' => [
+    'our-clients' => [
       'name'  => 'Nuestros<br/>clientes',
+      'url'   => 'our-clients'
     ],
 
     'contact' => [
@@ -128,7 +129,7 @@ return [
       'logo_url'  => 'antigua-altamira-2.png'
     ],
 
-    'holliday-inn' => [
+    'holiday-inn' => [
       'name' => 'Holliday Inn',
       'logo_path' => 'public/files/site/img/clients/logo/',
       'logo_url'  => 'holiday-inn.png'
@@ -191,11 +192,41 @@ return [
     ],
 
     'big-bola' => [
-      'name' => 'Big Bola'
+      'name' => 'Big Bola',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'big-bola.png'
     ],
 
     'mcm' => [
       'name' => 'MCM'
+    ],
+
+    /**
+     * Extras...
+     */
+    
+    'holiday-inn-express' => [
+      'name' => 'Holliday Inn Express & Suites',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'holiday-inn-express.png'
+    ],
+
+    'el-taller' => [
+      'name' => 'El Taller',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'el-taller.png'
+    ],
+
+    'inmobiliaria-vinte' => [
+      'name' => 'Inmobilaria Vinte',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'inmobiliaria-vinte.png'
+    ],
+
+    'via-diseno' => [
+      'name' => 'Vía Diseño',
+      'logo_path' => 'public/files/site/img/clients/logo/',
+      'logo_url'  => 'via-diseno.png'
     ]
   ],
 
@@ -213,7 +244,9 @@ return [
         'cover_page_url'    => 'jesus-roberto-ac.png',
         'order_priority'    => 1
       ],
-      // 'information-systems'   => 1
+      'our-clients' => [
+        'order_priority'  => 4
+      ]
     ],
 
     'start-point' => [
@@ -229,8 +262,9 @@ return [
         'cover_page_url'    => 'start-point-sn.png',
         'order_priority'    => 2
       ],
-      //'advertising-campaign'  => 2,
-      //'information-systems'   => 2
+      'our-clients' => [
+        'order_priority'  => 10
+      ]
     ],
 
     'galeria-laberynto' => [
@@ -246,7 +280,9 @@ return [
         'cover_page_url'    => 'galeria-laberynto-ed.png',
         'order_priority'    => 2
       ],
-      //'advertising-campaign'  => 3
+      'our-clients' => [
+        'order_priority'  => 3
+      ]
     ],
 
     'imaginarium' => [
@@ -277,8 +313,10 @@ return [
         'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'    => 'saazil-sn.png',
         'order_priority'    => 3
+      ],
+      'our-clients' => [
+        'order_priority'  => 9
       ]
-      //'advertising-campaign'  => 5
     ],
 
     'llaza' => [
@@ -287,6 +325,10 @@ return [
         'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'    => 'llaza-cd.png',
         'order_priority'    => 6
+      ],
+
+      'our-clients' => [
+        'order_priority'  => 6
       ]
     ],
 
@@ -311,6 +353,10 @@ return [
         'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'    => 'ornamenta-cd.png',
         'order_priority'    => 8
+      ],
+
+      'our-clients' => [
+        'order_priority'  => 5
       ]
     ],
 
@@ -331,7 +377,7 @@ return [
         'order_priority'    => 10
       ],
       'advertising-campaign' => [
-        'description'       => null,
+        'description'       => 'Se generó la campaña para Ana Telletxea con el fin de invertir el papel entre la marca y el usuario; el usuario porta la marca, y no es la marca quien define al usuario.',
         'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'    => 'ana-telletxea-ac.png',
         'order_priority'    => 5
@@ -340,16 +386,16 @@ return [
 
     'i-do-2' => [
       'corporate-identity' => [
-        'description'       => null,
+        'description'       => 'Desarrollo de marca para artículos de despedida de soltera en linea. La marca refleja ellado femenino y divertido deuna despedida de soltera. Se realizo de igual manera lacampana en redes sociales para promocionarla.',
         'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'    => 'i-do-2-cd.png',
         'order_priority'    => 11
       ],
 
       'social-network' => [
-        'description'       => null,
+        'description'       => 'Se crearon distintos posts y gifs con gráficos atractivos que comunicaran lo que es IDO2 y te generará emoción de querer irte a una despedida de soltera.',
         'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
-        'cover_page_url'    => null,
+        'cover_page_url'    => 'i-do-2-sn.png',
         'order_priority'    => 4
       ]
     ],
@@ -362,18 +408,21 @@ return [
         'order_priority'  => 3
       ],
       'information-systems' => [
-        'description'     => null,
+        'description'     => 'Se realizó el mapeo del centro de la ciudad de Querétaro con la intención de que los huéspedes de Antigua Altamira encuentren fácilmente los puntos de interés a su alrededor.',
         'cover_page_path' => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'  => 'antigua-altamira-is.png',
         'order_priority'  => 1
       ]
     ],
 
-    'holliday-inn' => [
+    'holiday-inn' => [
       'social-network' => [
         'description'     => null,
         'cover_page_path' => 'public/files/site/img/clients/cover_page/',
-        'cover_page_url'  => 'holliday-inn-sn.png',
+        'cover_page_url'  => 'holiday-inn-sn.png',
+        'order_priority'  => 1
+      ],
+      'our-clients' => [
         'order_priority'  => 1
       ]
     ],
@@ -510,15 +559,46 @@ return [
         'cover_page_path' => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'  => 'big-bola-c.png',
         'order_priority'  => 5
+      ],
+      'our-clients' => [
+        'order_priority'  => 11
       ]
     ],
 
     'mcm' => [
       'cartel' => [
-        'description'     => null,
+        'description'     => 'Carteles decorativos para una agencia de mercadotecnia basados en los elementos dellogotipo y gráficas de pie.',
         'cover_page_path' => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'  => 'mcm-c.png',
         'order_priority'  => 6
+      ]
+    ],
+
+    /**
+     * Our Clients Section...
+     */
+    
+    'holiday-inn-express' => [
+      'our-clients' => [
+        'order_priority'  => 2
+      ]
+    ],
+
+    'el-taller' => [
+      'our-clients' => [
+        'order_priority'  => 7
+      ]
+    ],
+
+    'via-diseno' => [
+      'our-clients' => [
+        'order_priority'  => 8
+      ]
+    ],
+
+    'inmobiliaria-vinte' => [
+      'our-clients' => [
+        'order_priority'  => 12
       ]
     ]
   ],
