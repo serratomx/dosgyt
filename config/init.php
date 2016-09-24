@@ -386,7 +386,7 @@ return [
 
     'i-do-2' => [
       'corporate-identity' => [
-        'description'       => 'Desarrollo de marca para artículos de despedida de soltera en linea. La marca refleja ellado femenino y divertido deuna despedida de soltera. Se realizo de igual manera lacampana en redes sociales para promocionarla.',
+        'description'       => 'Desarrollo de marca para artículos de despedida de soltera en linea. La marca refleja el lado femenino y divertido de una despedida de soltera. Se realizó de igual manera la campaña en redes sociales para promocionarla.',
         'cover_page_path'   => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'    => 'i-do-2-cd.png',
         'order_priority'    => 11
