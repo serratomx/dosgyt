@@ -1,7 +1,7 @@
 @extends('site.layouts.main')
 @section('title', $title)
 @section('content')
-<div class="container-fluid app-portfolio">
+<div class="container app-portfolio">
   <div class="row">
     <div class="col-xs-12 no-side-padding">
       <header>
@@ -46,7 +46,7 @@
         ?>
         @foreach ($menu->submenues as $submenu)
           <div id="{{ $submenu->keyword }}" class="tab-pane {!! ($submenu->keyword == $tabActive) ? 'active' : '' !!}" role="tabpanel">
-            <div class="col-xs-12 custom-padding-1">
+            <div class="col-xs-12">
               <?php
                 $num_clients = $submenu->clients->count();
                 $i = 0;

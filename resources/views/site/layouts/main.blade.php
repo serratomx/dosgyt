@@ -21,7 +21,7 @@
   <!-- END [Cascade Style Sheet Files] -->
 </head>
 <body>
-  <div class="container-fluid @yield('navbar-class')">
+  <div class="container @yield('navbar-class')">
     <div class="row">
       <header>
         <div id="navbar" class="app-navbar col-xs-12 {!! (isset($navbarFixed) and !$navbarFixed) ?: 'app-navbar-fixed' !!}">
@@ -77,7 +77,7 @@
     </div>
   </div>
   @yield('content')
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <section>
         <div class="app-footer col-xs-12">
