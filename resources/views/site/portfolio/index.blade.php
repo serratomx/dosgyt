@@ -45,7 +45,7 @@
           $i = 0;
         ?>
         @foreach ($menu->submenues as $submenu)
-          <div id="{{ $submenu->keyword }}" class="tab-pane {!! ($submenu->keyword == $tabActive) ? 'active' : '' !!}" role="tabpanel">
+          <div id="{{ $submenu->keyword }}" class="tab-pane col-xs-12 no-side-padding {!! ($submenu->keyword == $tabActive) ? 'active' : '' !!}" role="tabpanel">
             <div class="col-xs-12">
               <?php
                 $num_clients = $submenu->clients->count();

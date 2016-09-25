@@ -1,7 +1,7 @@
 @extends('site.layouts.main')
 @section('title', 'Contacto')
 @section('content')
-<div class="container-fluid app-contact">
+<div class="container app-contact">
   <div class="row">
     <div class="col-xs-12 no-side-padding">
       <header>

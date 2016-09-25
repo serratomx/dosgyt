@@ -30,15 +30,15 @@ function loadItem($viewer, url, submenu, item) {
         }
 
         if ($title.length == 1) {
-          $title.text(current_item.name ? current_item.name : '');
+          $title.html(current_item.name ? current_item.name : '');
         }
 
         if ($subtitle.length == 1) {
-          $subtitle.text(submenu.name ? submenu.name : '');
+          $subtitle.html(submenu.name ? submenu.name : '');
         }
 
         if ($description.length == 1) {
-          $description.text(current_item.description ? current_item.description : '');
+          $description.html(current_item.description ? current_item.description : '');
         }
 
         if (prev_item !== null) {
@@ -54,8 +54,8 @@ function loadItem($viewer, url, submenu, item) {
         }
       }
     },
-    error: function(res, textStatus, jqxhr) {
-      alert("AJAX Error");
+    error: function(res, htmlStatus, jqxhr) {
+      alert("\t\t\tError de conexión\n\nPor favor, intente más tarde.");
     }
   });  
 }

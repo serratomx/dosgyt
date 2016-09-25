@@ -12,20 +12,22 @@ $(document).on('ready', function() {
   var num_clients = $('.client-container', $tabPaneActive).length,
         client = 0;
 
-  for (var i = 0; i < 4 && i < num_clients; ++i) {
+  for (var i = 0; i < 4 && client < num_clients; ++i) {
     $('#client-container-' + client, $tabPaneActive).toggleClass('hidden fadeInUp');
     ++client;
   }
 
-  var interval = setInterval(function() {
-      for (var i = 0; i < 4 && i < num_clients && client < num_clients; ++i) {
-        $('#client-container-' + client, $tabPaneActive).toggleClass('hidden fadeInUp');
-        ++client;
-      }
-      if (client == num_clients) {
-        clearTimeout(interval);
-      }
-  }, 200);
+  if (client < num_clients) {
+    var interval = setInterval(function() {
+        for (var i = 0; i < 4 && client < num_clients; ++i) {
+          $('#client-container-' + client, $tabPaneActive).toggleClass('hidden fadeInUp');
+          ++client;
+        }
+        if (client == num_clients) {
+          clearInterval(interval);
+        }
+    }, 200);
+  }
 
   $('ul.tablist a[data-toggle="tab"]', $portfolio).on('shown.bs.tab', function (e) {
     var $this = $(this),
@@ -37,20 +39,22 @@ $(document).on('ready', function() {
     var num_clients = $('.client-container', $tabPane).length,
         client = 0;
 
-    for (var i = 0; i < 4 && i < num_clients; ++i) {
+    for (var i = 0; i < 4 && client < num_clients; ++i) {
       $('#client-container-' + client, $tabPane).toggleClass('hidden fadeInUp');
       ++client;
     }
 
-    var interval = setInterval(function() {
-        for (var i = 0; i < 4 && i < num_clients && client < num_clients; ++i) {
-          $('#client-container-' + client, $tabPane).toggleClass('hidden fadeInUp');
-          ++client;
-        }
-        if (client == num_clients) {
-          clearTimeout(interval);
-        }
-    }, 200);
+    if (client == num_clients) {
+      var interval = setInterval(function() {
+          for (var i = 0; i < 4 && client < num_clients; ++i) {
+            $('#client-container-' + client, $tabPane).toggleClass('hidden fadeInUp');
+            ++client;
+          }
+          if (client == num_clients) {
+            clearInterval(interval);
+          }
+      }, 200);
+    }
   });
 
   $('ul.tablist a[data-toggle="tab"]', $portfolio).on('hide.bs.tab', function (e) {

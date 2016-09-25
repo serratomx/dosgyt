@@ -1,7 +1,7 @@
 @extends('site.layouts.main')
 @section('title', $title)
 @section('content')
-<div class="container-fluid app-portfolio">
+<div class="container app-portfolio">
   <div class="row">
     <div class="col-xs-12 no-side-padding">
       <header>
@@ -53,33 +53,35 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="app-description-container col-xs-7">
-        <header>
-          <div class="header col-xs-12 no-side-padding">
-            <h1 class="app-title">{!! $client->name !!}</h1>
-            <h2 class="app-subtitle">{!! $submenu->name !!}</h2>
-          </div>
-        </header>
-        <article>
-          <div class="content col-xs-12 no-side-padding">
-            <p class="app-description">{!! $client->description($submenu->keyword) !!}</p>
-          </div>
-        </article>
-      </div>
-      <div class="app-tools col-xs-5">
-        <div class="col-xs-12 no-side-padding">
-          <div class="pull-right">
-            <a id="prev-item" href="#jumbotron" data-item="" class="app-prev-item app-button btn btn-default anchorLink disabled">
-              <span class="fa fa-arrow-left"></span>
-            </a>
-            <a id="next-item" href="#jumbotron" data-item="" class="app-next-item app-button btn btn-default anchorLink disabled">
-              <span class="fa fa-arrow-right"></span>
-            </a>
+    <div class="container">
+      <section>
+        <div class="app-description-container col-xs-6">
+          <header>
+            <div class="header col-xs-12 no-side-padding">
+              <h1 class="app-title">{!! $client->name !!}</h1>
+              <h2 class="app-subtitle">{!! $submenu->name !!}</h2>
+            </div>
+          </header>
+          <article>
+            <div class="content col-xs-12 no-side-padding">
+              <p class="app-description">{!! $client->description($submenu->keyword) !!}</p>
+            </div>
+          </article>
+        </div>
+        <div class="app-tools col-xs-6">
+          <div class="col-xs-12 no-side-padding">
+            <div class="pull-right">
+              <a id="prev-item" href="#jumbotron" data-item="" class="app-prev-item app-button btn btn-default anchorLink disabled">
+                <span class="fa fa-arrow-left"></span>
+              </a>
+              <a id="next-item" href="#jumbotron" data-item="" class="app-next-item app-button btn btn-default anchorLink disabled">
+                <span class="fa fa-arrow-right"></span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
 </div>
 @endsection
