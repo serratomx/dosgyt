@@ -15,9 +15,7 @@
       @foreach ($clients as $client)
         <div class="col-xs-3 no-side-padding">
           <div id="client-container-{!! $i !!}" class="client-container hidden col-xs-12 no-side-padding text-center hvr-grow">
-            <a href="{!! URL::to('/portfolio/'.$submenu->keyword.'/viewer/'.$client->keyword) !!}" title="Ver {!! $client->name !!}">
-              <div class="client-image inline-block" style="background-image: url({!! asset($client->logo_link) !!});"></div>
-            </a>
+            <div class="client-image inline-block" style="background-image: url({!! asset($client->logo_link) !!});" title="Ver {!! $client->name !!}"></div>
           </div>
         </div>   
         <?php ++$i ?>

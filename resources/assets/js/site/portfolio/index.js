@@ -44,7 +44,7 @@ $(document).on('ready', function() {
       ++client;
     }
 
-    if (client == num_clients) {
+    if (client < num_clients) {
       var interval = setInterval(function() {
           for (var i = 0; i < 4 && client < num_clients; ++i) {
             $('#client-container-' + client, $tabPane).toggleClass('hidden fadeInUp');
