@@ -27,5 +27,5 @@
 </div>
 @endsection
 @section('scripts')
-  <script type="text/javascript" src="{!! asset('public/assets/js/site/ourClients/index.js') !!}"></script>
+  <script type="text/javascript" src="{!! asset('public'.elixir('assets/js/site/ourClients/index.js')) !!}"></script>
 @endsection

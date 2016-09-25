@@ -91,5 +91,5 @@
       __submenu       = "{!! $submenu->keyword !!}",
       __current_item  = "{!! $client->keyword !!}";
   </script>
-  <script type="text/javascript" src="{!! asset('public/assets/js/site/portfolio/viewer/index.js') !!}"></script>
+  <script type="text/javascript" src="{!! asset('public'.elixir('assets/js/site/portfolio/viewer/index.js')) !!}"></script>
 @endsection

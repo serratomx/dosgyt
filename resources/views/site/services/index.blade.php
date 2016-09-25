@@ -39,5 +39,5 @@
 </div>
 @endsection
 @section('scripts')
-  <script type="text/javascript" src="{!! asset('public/assets/js/site/services/index.js') !!}"></script>
+  <script type="text/javascript" src="{!! asset('public'.elixir('assets/js/site/services/index.js')) !!}"></script>
 @endsection
