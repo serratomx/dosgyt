@@ -7,3 +7,24 @@
 
 
 }
+
+/* 
+  Media queries para elementos de bootstrap
+   ------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  
+.app-portfolio ul.tablist > li > a {
+  padding: 12px 11px 12px 0;
+  font-size: 11px;
+}
+
+}
+
+@media (min-width: 992px) {
+  
+.app-portfolio ul.tablist > li > a {
+  padding: 12px 17px 12px 0;
+  font-size: 14px;
+}
+
+}

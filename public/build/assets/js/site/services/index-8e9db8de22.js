@@ -1,1 +1,0 @@
-$(document).on("ready",function(){for(var e=$(".app-services"),a=$(".services-container",e),n=$(".services-list",a),r=0,s=n.length,t=0;t<2&&r<s;++t){var i=$(n[r]);i.toggleClass("fadeInUp hidden"),++r}if(r<s)var v=setInterval(function(){for(var e=0;e<2&&r<s;++e){var a=$(n[r]);a.toggleClass("fadeInUp hidden"),++r,r==s&&clearInterval(v)}},200)});

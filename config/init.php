@@ -417,7 +417,7 @@ return [
 
     'holiday-inn' => [
       'social-network' => [
-        'description'     => null,
+        'description'     => 'Se generaron contenidos relevantes para Facebook, promocionando el turismo en Querétaro, las instalaciones y eventos del hotel, manteniendo la línea gráfica tradicional que caracteriza a la marca.',
         'cover_page_path' => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'  => 'holiday-inn-sn.png',
         'order_priority'  => 1
@@ -555,7 +555,7 @@ return [
 
     'big-bola' => [
       'cartel' => [
-        'description'     => null,
+        'description'     => 'Cartel para la decoración del cuarto de poker en BIG BOLA CASINOS.',
         'cover_page_path' => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'  => 'big-bola-c.png',
         'order_priority'  => 5
@@ -567,7 +567,7 @@ return [
 
     'mcm' => [
       'cartel' => [
-        'description'     => 'Carteles decorativos para una agencia de mercadotecnia basados en los elementos dellogotipo y gráficas de pie.',
+        'description'     => 'Carteles decorativos para una agencia de mercadotecnia basados en los elementos del logotipo y gráficas de pie.',
         'cover_page_path' => 'public/files/site/img/clients/cover_page/',
         'cover_page_url'  => 'mcm-c.png',
         'order_priority'  => 6

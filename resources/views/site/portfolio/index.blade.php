@@ -10,7 +10,7 @@
         </div>
       </header>
     </div>
-    <div class="col-xs-12 text-center no-side-padding">
+    <div class="col-xs-12 text-left no-side-padding">
       <ul class="tablist" role="tablist">
         <?php 
           $menuSearch = App\Submenu::whereKeyword('portfolio');

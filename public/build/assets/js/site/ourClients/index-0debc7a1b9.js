@@ -1,1 +1,0 @@
-$(document).on("ready",function(){for(var n=$(".app-our-clients"),e=$(".our-clients-container",n),t=$(".client-container",e).length,a=0,r=0;r<4&&a<t;++r)$("#client-container-"+a,e).toggleClass("hidden fadeInUp"),++a;if(a<t)var i=setInterval(function(){for(var n=0;n<4&&a<t;++n)$("#client-container-"+a,e).toggleClass("hidden fadeInUp"),++a;a==t&&clearInterval(i)},200)});
